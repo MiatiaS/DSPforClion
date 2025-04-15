@@ -127,7 +127,7 @@ int main(void)
     HAL_ADC_GetValue(&hadc2);
     for (int i = 0;i<FFT_LENGTH;i++)
     {
-      adc_val2[i] = adc_buf2[i] / 4095 * 3.3;
+      adc_val2[i] = adc_buf2[i] /4095 * 3.3;
     }
 
   }
