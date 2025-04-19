@@ -10,32 +10,17 @@
 #include "math.h"
 #include "arm_math.h"
 #include "stdlib.h"
-
+#include "myfft.h"
 
 #include "math.h"
 #include "arm_math.h"
 #include "stdlib.h"
 
 // 定义FFT处理结构体
-typedef struct {
-    // 配置参数
-    float adc_rate;         // 采样率
-    int FFT_LENGTH;         // FFT长度
-    // 输入数据
-    float* adc_val;         // 输入ADC数据数组
-    // 输出结果
-    float fft_fv;           // 主要频率成分
-    float fft_vpp;          // 峰峰值
-    float typek;            // 基波与第三谐波比值
-    // 中间缓冲区
-    float* FFT_InputBuf;    // FFT输入缓冲区（实部+虚部）
-    float* FFT_OutputBuf;   // FFT输出幅度
-    // FFT实例
-    arm_cfft_radix4_instance_f32 scfft;  // FFT计算实例
-} FFT_Handler;
+
 
 // 辅助函数声明
-static float floatfind(float* array, int length, int number);
+static float floatfindmax(float* array, int length, int number);
 static float floatfindmin(float* array, int length, int number);
 
 // 初始化FFT处理器
@@ -79,10 +64,38 @@ void fft_calculate(FFT_Handler* handler) {
 
     // 执行FFT计算
     arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
-
+    //这时候的FFT_InputBuf同时保存着实部和虚部的信息
     // 计算幅度
     arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
-    handler->FFT_OutputBuf[0] = 0.0; // 去除直流分量
+    fft_calculate_mainfreq(handler);
+    fft_calculate_harmonic(handler);
+    fft_calculate_rms(handler);
+}
+
+
+
+
+
+/*
+ *@brief：计算信号主峰与次峰的比值
+ *@输入：FFT_Handler句柄
+ *@返回：更新句柄typek参数
+ */
+void fft_calculate_harmonic(FFT_Handler* handler)
+{
+    float fundamental = floatfindmax(handler->FFT_OutputBuf, handler->FFT_LENGTH, 1);
+    float third_harmonic = floatfindmax(handler->FFT_OutputBuf, handler->FFT_LENGTH, 2);
+    handler->typek = (third_harmonic != 0) ? (fundamental / third_harmonic) : 0;
+}
+
+/*
+ *@brief：计算信号基波频率，需要ADC采样率准确
+ *@输入：FFT_Handler句柄
+ *@返回：更新句柄fft_fv参数
+ */
+void fft_calculate_mainfreq(FFT_Handler* handler)
+{
+    handler->FFT_OutputBuf[0] = 0.0; // 去除直流分量,这是为了找第一个峰值
 
     // 查找最大值索引
     uint32_t index_max;
@@ -94,21 +107,20 @@ void fft_calculate(FFT_Handler* handler) {
         handler->fft_fv -= handler->adc_rate / 2;
     }
 
-    // 计算峰峰值（时域）
-    float vmax, vmin;
-    uint32_t index_temp;
-    arm_max_f32(handler->adc_val, handler->FFT_LENGTH, &vmax, &index_temp);
-    arm_min_f32(handler->adc_val, handler->FFT_LENGTH, &vmin, &index_temp);
-    handler->fft_vpp = vmax - vmin;
-
-    // 计算基波与第三谐波比值
-    float fundamental = floatfind(handler->FFT_OutputBuf, handler->FFT_LENGTH, 1);
-    float third_harmonic = floatfind(handler->FFT_OutputBuf, handler->FFT_LENGTH, 3);
-    handler->typek = (third_harmonic != 0) ? (fundamental / third_harmonic) : 0;
+}
+void fft_calculate_rms(FFT_Handler* handler)
+{
+    //对时域进行计算
+    arm_rms_f32(handler->adc_val,handler->FFT_LENGTH,&handler->fft_vpp);
+    //如果频谱泄露控制的好，可以使用频域计算
 }
 
-// 辅助函数：查找第n个最大值（带间隔保护）
-static float floatfind(float* array, int length, int number) {
+
+
+
+// 辅助函数：查找第n个最大值（带间隔保护） 返回下标
+//此处检查到最大值后，会把左右各10个点过滤掉，不再计算，减少频谱泄露带来的影响
+static float floatfindmax(float* array, int length, int number) {
     int* flag = (int*)calloc(length, sizeof(int));
     float max_value = 0;
 
@@ -122,7 +134,6 @@ static float floatfind(float* array, int length, int number) {
                 current_index = i;
             }
         }
-
         if (current_index == -1) break;
 
         // 标记附近±10个点

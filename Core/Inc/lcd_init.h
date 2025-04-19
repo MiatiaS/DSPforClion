@@ -5,7 +5,7 @@
 #define u16 uint16_t
 #define u32 uint32_t
 //-----------显示方向在这里设置---------------
-#define USE_HORIZONTAL 1 // ST7735S 0上下倒置，1正置，2逆时针旋转90度，3顺时针旋转90度，ST7735R 4正置，5上下倒置
+#define USE_HORIZONTAL 2 // ST7735S 0上下倒置，1正置，2逆时针旋转90度，3顺时针旋转90度，ST7735R 4正置，5上下倒置
 //------------------------------------------
 
 #if USE_HORIZONTAL == 0 || USE_HORIZONTAL == 1

@@ -80,6 +80,11 @@ FFT_Handler_Free(fft);
        */
      void fft_calculate(FFT_Handler* handler);
 
+     void fft_calculate_harmonic(FFT_Handler* handler);
+     void fft_calculate_mainfreq(FFT_Handler* handler);
+     void fft_calculate_rms(FFT_Handler* handler);
+
+
 #ifdef __cplusplus
  }
 #endif

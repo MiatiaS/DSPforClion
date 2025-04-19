@@ -34,6 +34,7 @@
 
 /** Configure pins
      PH0-OSC_IN (PH0)   ------> RCC_OSC_IN
+     PH1-OSC_OUT (PH1)   ------> RCC_OSC_OUT
      PA13 (JTMS/SWDIO)   ------> DEBUG_JTMS-SWDIO
      PA14 (JTCK/SWCLK)   ------> DEBUG_JTCK-SWCLK
 */
@@ -50,13 +51,16 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_3|TFT_BL_Pin|TFT_CS_Pin|TFT_DC_Pin
-                          |TFT_RES_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, TFT_BL_Pin|TFT_CS_Pin|TFT_DC_Pin|TFT_RES_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PE3 TFT_BL_Pin TFT_CS_Pin TFT_DC_Pin
-                           TFT_RES_Pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_3|TFT_BL_Pin|TFT_CS_Pin|TFT_DC_Pin
-                          |TFT_RES_Pin;
+  /*Configure GPIO pins : BTN1_Pin BTN2_Pin */
+  GPIO_InitStruct.Pin = BTN1_Pin|BTN2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : TFT_BL_Pin TFT_CS_Pin TFT_DC_Pin TFT_RES_Pin */
+  GPIO_InitStruct.Pin = TFT_BL_Pin|TFT_CS_Pin|TFT_DC_Pin|TFT_RES_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
