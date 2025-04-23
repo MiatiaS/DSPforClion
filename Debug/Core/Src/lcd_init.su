@@ -1,0 +1,9 @@
+../Core/Src/lcd_init.c:9:6:LCD_Writ_Bus	16	static
+../Core/Src/lcd_init.c:24:6:LCD_WR_DATA8	16	static
+../Core/Src/lcd_init.c:34:6:LCD_WR_DATA	16	static
+../Core/Src/lcd_init.c:45:6:LCD_WR_REG	16	static
+../Core/Src/lcd_init.c:58:6:LCD_Address_Set	24	static
+../Core/Src/lcd_init.c:126:6:LCD_ST7735R_Init	8	static
+../Core/Src/lcd_init.c:256:6:LCD_ST7735S_Init	8	static
+../Core/Src/lcd_init.c:357:6:LCD_ST7789_Init	8	static
+../Core/Src/lcd_init.c:459:6:LCD_ST7789V3_Init	8	static

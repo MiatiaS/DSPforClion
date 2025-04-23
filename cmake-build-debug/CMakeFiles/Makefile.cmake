@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Users/20614/Desktop/STM32Project/DSPforClion/CMakeLists.txt"
+  "C:/Users/20614/Desktop/DSPforClion/DSPforClion/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeASMCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"

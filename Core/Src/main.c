@@ -34,6 +34,7 @@
   #include "lcd.h"
   #include "lcd_init.h"
   #include "myfft.h"
+  #include "fft_phase.h"
   #include "fft_disp.h"
 /* USER CODE END Includes */
 
@@ -68,10 +69,13 @@
   char str2[50];
   char str3[50];
   char str4[50];
-
+  char str5[50];
+  char str6[50];
+  char str7[50];
+  char str8[50];
 
   int flag_adcdone;
-  int flag_fft_done;
+
   uint32_t time_idx;
   float time_float ;
 
@@ -138,12 +142,13 @@ int main(void)
   MX_TIM6_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-    flag_fft_done = 1;
+
     HAL_Delay(200);
     LCD_ST7789V3_Init();
     HAL_ADCEx_Calibration_Start(&hadc2,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc1,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_TIM_Base_Start(&htim6); //TIM6同步触发两个ADC进行采样
+
     HAL_TIM_Base_Start_IT(&htim3); //TIM5 用于做时间定时
 
     HAL_Delay(200);
@@ -152,7 +157,9 @@ int main(void)
     LCD_Fill(0,0,320,240,BLACK);
     //FFT Init
     FFT_Handler* FFT_Handle = FFT_Handler_Init(FFT_LENGTH);
-    FFT_Handle->adc_rate = 1250000; //标定出来是1M的采样率
+    FFT_Handler* FFT_Handler2 = FFT_Handler_Init(FFT_LENGTH);
+    FFT_Handle->adc_rate = 25000;
+    FFT_Handler2->adc_rate = 25000;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -160,7 +167,7 @@ int main(void)
     while (1)
     {
 
-
+    /**************************************FFT计算部分**********************************************/
         while (flag_adcdone != 1){};         //必须等待数组全部更新完毕 在进入
         HAL_ADC_Stop_DMA(&hadc1);
         HAL_ADC_Stop_DMA(&hadc2);
@@ -173,31 +180,44 @@ int main(void)
         }
 
 
-        flag_adcdone = 0;
-        flag_fft_done = 1 ;
         //不放中断，害怕中断更改val数据
         FFT_Handle->adc_val = adc_val1;
+        FFT_Handler2->adc_val = adc_val2;
+
         LCD_ShowString(30,20,"hello world",WHITE,BLACK,32,0);
         fft_calculate(FFT_Handle);
+        fft_calculate(FFT_Handler2);
+        float phase = fft_calculate_phase(FFT_Handle,FFT_Handler2);
+
         float fft_fv = (float)FFT_Handle->fft_fv;
         for (int i = 0;i<FFT_LENGTH;i++)
         {
           fft_output_temp[i] = FFT_Handle->FFT_OutputBuf[i] ;
         }
+      /************************************实验性代码,FFT_OVER2*************************************/
 
+
+
+      /************************************显示&&串口发送*******************************************/
         for (int i =0; i < FFT_LENGTH; i++)
         {
           sprintf(str1,"val:%5f,%5f,%5f\r\n",adc_val1[i],(float)i/1000,fft_output_temp[i]);
           HAL_UART_Transmit_DMA(&huart1,str1,sizeof(str1));
         }
-        sprintf(str3, "Freq: %.1f Hz", FFT_Handle->fft_fv);
+        sprintf(str3, "Freq: %.1f Hz", FFT_Handle->fft_fv );
         LCD_ShowString(30, 50, str3 ,WHITE, BLACK, 16, 0);
         // 显示电压有效值
-        sprintf(str4, "RMS: %.2f V", FFT_Handle->fft_vpp);
+        sprintf(str4, "Vpp: %.5f V", FFT_Handle->fft_vpp);
         LCD_ShowString(30, 70, str4, WHITE, BLACK, 16, 0);
-      HAL_Delay(1000);
-      flag_adcdone = 0;
 
+        sprintf(str5,"RMS: %.5f v",FFT_Handle->fft_rms);
+        LCD_ShowString(30, 90, str5, WHITE, BLACK, 16, 0);
+
+        sprintf(str6, "Phase: %.5f deg",phase);
+        LCD_ShowString(30, 110, str6, WHITE, BLACK, 16, 0);
+
+        HAL_Delay(1000);
+        flag_adcdone = 0;
 
 
 

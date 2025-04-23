@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj.d"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj.d"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj"

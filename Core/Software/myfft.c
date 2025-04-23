@@ -11,7 +11,7 @@
 #include "arm_math.h"
 #include "stdlib.h"
 #include "myfft.h"
-
+#include "fft.h"
 #include "math.h"
 #include "arm_math.h"
 #include "stdlib.h"
@@ -63,13 +63,26 @@ void fft_calculate(FFT_Handler* handler) {
     }
 
     // 执行FFT计算
-    arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
+   //arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
     //这时候的FFT_InputBuf同时保存着实部和虚部的信息
     // 计算幅度
-    arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
+    //arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
+    struct compx* buffer ;
+    for (int i = 0; i < handler->FFT_LENGTH; i++)
+    {
+        buffer[i].real = handler->adc_val[i];  // 从ADC获取实数输入
+        buffer[i].imag = 0.0f;                // 虚部初始化为0
+    }
+    cfft(buffer, handler->FFT_LENGTH);
+    for (int i = 0; i < handler->FFT_LENGTH; i++)
+    {
+        handler->FFT_InputBuf[2 * i] = buffer[i].real;
+        handler->FFT_InputBuf[2 * i + 1] = buffer[i].imag;
+    }
     fft_calculate_mainfreq(handler);
     fft_calculate_harmonic(handler);
     fft_calculate_rms(handler);
+    fft_calculate_vpp(handler);
 }
 
 
@@ -99,7 +112,7 @@ void fft_calculate_mainfreq(FFT_Handler* handler)
 
     // 查找最大值索引
     uint32_t index_max;
-    arm_max_f32(handler->FFT_OutputBuf, handler->FFT_LENGTH, &handler->fft_vpp, &index_max);
+    arm_max_f32(handler->FFT_OutputBuf, handler->FFT_LENGTH / 2, &handler->fft_vpp, &index_max);
 
     // 计算频率
     handler->fft_fv = ((float)index_max / handler->FFT_LENGTH) * handler->adc_rate;
@@ -111,10 +124,26 @@ void fft_calculate_mainfreq(FFT_Handler* handler)
 void fft_calculate_rms(FFT_Handler* handler)
 {
     //对时域进行计算
-    arm_rms_f32(handler->adc_val,handler->FFT_LENGTH,&handler->fft_vpp);
+    arm_rms_f32(handler->adc_val,handler->FFT_LENGTH,&handler->fft_rms);
     //如果频谱泄露控制的好，可以使用频域计算
 }
 
+void fft_calculate_vpp(FFT_Handler* handler)
+{
+    float max,min;
+    int idx_max,idx_min;
+    arm_max_f32(handler->adc_val,handler->FFT_LENGTH,&max,&idx_max);
+    arm_min_f32(handler->adc_val,handler->FFT_LENGTH,&min,&idx_min);
+    handler->fft_vpp = (max - min) ;  //经验值滤波 抖动在5mv左右，如果再通过均值滤波就好了
+}
+
+void fft_cauculate_vppf(FFT_Handler* handler)
+{
+    float max;
+    int idx_max;
+    arm_max_f32(handler->FFT_OutputBuf,handler->FFT_LENGTH,&max,&idx_max);
+
+}
 
 
 
@@ -152,4 +181,80 @@ static float floatfindmax(float* array, int length, int number) {
 static float floatfindmin(float* array, int length, int number) {
     // 实现与floatfind类似，但查找最小值
     // 此处省略具体实现以节省篇幅
+}
+
+
+
+
+/*****实验性代码，蝶形运算
+ *此部分代码不依赖fft_calculate函数运行
+ *******/
+void fft_calculate_over2(FFT_Handler* handler)
+{
+    fft_myfly(handler);
+}
+/************生成旋转因子***************/
+static void precomute_twiddle_factors(float32_t *twiddle,uint32_t fft_length)
+{
+    for (int i = 0;i <fft_length/2;i++)
+    {
+        float32_t angle = -2 * PI * i /fft_length;
+        twiddle[2*i] = cosf(angle);
+        twiddle[2*i+1] = sinf(angle);
+    }
+
+};
+
+static void fft_myfly(FFT_Handler* handler) {
+    int N = 8192; // 总长度
+    int N_OVER_2 = 4096;
+
+    // 分配奇偶序列缓冲区
+    float32_t* Inputbuf_even = malloc(2 * N_OVER_2 * sizeof(float32_t));
+    float32_t* Inputbuf_odd = malloc(2 * N_OVER_2 * sizeof(float32_t));
+
+    // 奇偶分解
+    for (int m = 0; m < N_OVER_2; m++) {
+        Inputbuf_even[2*m] = handler->adc_val_doubled[2*m]; // 偶数实部
+        Inputbuf_even[2*m + 1] = 0; // 虚部为0
+        Inputbuf_odd[2*m] = handler->adc_val_doubled[2*m + 1]; // 奇数实部
+        Inputbuf_odd[2*m + 1] = 0; // 虚部为0
+    }
+
+    // 执行4096点FFT
+    arm_cfft_instance_f32* scfft1 ;
+    arm_cfft_instance_f32* scfft2 ;
+    arm_cfft_init_f32(scfft1,handler->FFT_LENGTH);
+    arm_cfft_init_f32(scfft2,handler->FFT_LENGTH);
+    arm_cfft_f32(&scfft1, Inputbuf_even, 0, 1);
+    arm_cfft_f32(&scfft2, Inputbuf_odd, 0, 1);
+
+    // 预计算8192点旋转因子
+    float32_t twiddle[N_OVER_2 * 2]; // 复数存储
+    precomute_twiddle_factors(twiddle, N);
+
+    // 蝶形合并
+    for (int k = 0; k < N_OVER_2; k++) {
+        float32_t tw_real = twiddle[2*k];
+        float32_t tw_imag = twiddle[2*k + 1];
+
+        float32_t o_real = Inputbuf_odd[2*k];
+        float32_t o_imag = Inputbuf_odd[2*k + 1];
+
+        // 计算 twiddle * O[k]
+        float32_t temp_real = o_real * tw_real - o_imag * tw_imag;
+        float32_t temp_imag = o_real * tw_imag + o_imag * tw_real;
+
+        // 合并结果
+        // 前半部分: X[k] = E[k] + temp
+        handler->FFT_InputBuf_over2[2*k] = Inputbuf_even[2*k] + temp_real;
+        handler->FFT_InputBuf_over2[2*k + 1] = Inputbuf_even[2*k + 1] + temp_imag;
+
+        // 后半部分: X[k + N_OVER_2] = E[k] - temp
+        handler->FFT_InputBuf_over2[2*(k + N_OVER_2)] = Inputbuf_even[2*k] - temp_real;
+        handler->FFT_InputBuf_over2[2*(k + N_OVER_2) + 1] = Inputbuf_even[2*k + 1] - temp_imag;
+    }
+
+    free(Inputbuf_even);
+    free(Inputbuf_odd);
 }

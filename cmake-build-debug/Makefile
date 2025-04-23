@@ -56,10 +56,10 @@ RM = "D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\20614\Desktop\STM32Project\DSPforClion
+CMAKE_SOURCE_DIR = C:\Users\20614\Desktop\DSPforClion\DSPforClion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug\CMakeFiles C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ DSPforClion.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/build
 .PHONY : DSPforClion.elf/fast
 
+Core/Software/fft.obj: Core/Software/fft.c.obj
+.PHONY : Core/Software/fft.obj
+
+# target to build an object file
+Core/Software/fft.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj
+.PHONY : Core/Software/fft.c.obj
+
+Core/Software/fft.i: Core/Software/fft.c.i
+.PHONY : Core/Software/fft.i
+
+# target to preprocess a source file
+Core/Software/fft.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.i
+.PHONY : Core/Software/fft.c.i
+
+Core/Software/fft.s: Core/Software/fft.c.s
+.PHONY : Core/Software/fft.s
+
+# target to generate assembly for a file
+Core/Software/fft.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.s
+.PHONY : Core/Software/fft.c.s
+
 Core/Software/fft_disp.obj: Core/Software/fft_disp.c.obj
 .PHONY : Core/Software/fft_disp.obj
 
@@ -151,6 +175,54 @@ Core/Software/fft_disp.s: Core/Software/fft_disp.c.s
 Core/Software/fft_disp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.s
 .PHONY : Core/Software/fft_disp.c.s
+
+Core/Software/fft_phase.obj: Core/Software/fft_phase.c.obj
+.PHONY : Core/Software/fft_phase.obj
+
+# target to build an object file
+Core/Software/fft_phase.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj
+.PHONY : Core/Software/fft_phase.c.obj
+
+Core/Software/fft_phase.i: Core/Software/fft_phase.c.i
+.PHONY : Core/Software/fft_phase.i
+
+# target to preprocess a source file
+Core/Software/fft_phase.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.i
+.PHONY : Core/Software/fft_phase.c.i
+
+Core/Software/fft_phase.s: Core/Software/fft_phase.c.s
+.PHONY : Core/Software/fft_phase.s
+
+# target to generate assembly for a file
+Core/Software/fft_phase.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.s
+.PHONY : Core/Software/fft_phase.c.s
+
+Core/Software/fft_window.obj: Core/Software/fft_window.c.obj
+.PHONY : Core/Software/fft_window.obj
+
+# target to build an object file
+Core/Software/fft_window.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj
+.PHONY : Core/Software/fft_window.c.obj
+
+Core/Software/fft_window.i: Core/Software/fft_window.c.i
+.PHONY : Core/Software/fft_window.i
+
+# target to preprocess a source file
+Core/Software/fft_window.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.i
+.PHONY : Core/Software/fft_window.c.i
+
+Core/Software/fft_window.s: Core/Software/fft_window.c.s
+.PHONY : Core/Software/fft_window.s
+
+# target to generate assembly for a file
+Core/Software/fft_window.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.s
+.PHONY : Core/Software/fft_window.c.s
 
 Core/Software/myfft.obj: Core/Software/myfft.c.obj
 .PHONY : Core/Software/myfft.obj
@@ -1129,9 +1201,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSPforClion.elf
+	@echo ... Core/Software/fft.obj
+	@echo ... Core/Software/fft.i
+	@echo ... Core/Software/fft.s
 	@echo ... Core/Software/fft_disp.obj
 	@echo ... Core/Software/fft_disp.i
 	@echo ... Core/Software/fft_disp.s
+	@echo ... Core/Software/fft_phase.obj
+	@echo ... Core/Software/fft_phase.i
+	@echo ... Core/Software/fft_phase.s
+	@echo ... Core/Software/fft_window.obj
+	@echo ... Core/Software/fft_window.i
+	@echo ... Core/Software/fft_window.s
 	@echo ... Core/Software/myfft.obj
 	@echo ... Core/Software/myfft.i
 	@echo ... Core/Software/myfft.s

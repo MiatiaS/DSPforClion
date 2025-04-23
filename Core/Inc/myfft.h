@@ -41,15 +41,19 @@ FFT_Handler_Free(fft);
 
          /* 输入数据指针 */
          float* adc_val;         // 指向ADC采样数据数组
-
+         float* adc_val_doubled;   //后备隐藏数组 用于蝶形运算
          /* 输出结果 */
          float fft_fv;           // 基波频率(单位:Hz)
          float fft_vpp;          // 时域峰峰值
+         float fft_rms;
          float typek;            // 基波与三次谐波比值
 
          /* 内部缓冲区（由init函数分配）*/
          float* FFT_InputBuf;    // FFT输入缓冲区(实部+虚部)
          float* FFT_OutputBuf;   // FFT幅度输出缓冲区
+         float* FFT_InputBuf_over2;//FFT蝶形运算翻倍(实部+虚部)
+         float* FFT_OutputBuf_over2;//FFT蝶形运算翻倍
+
 
          /* FFT实例 */
          arm_cfft_radix4_instance_f32 scfft;  // CMSIS-DSP FFT实例
@@ -83,6 +87,11 @@ FFT_Handler_Free(fft);
      void fft_calculate_harmonic(FFT_Handler* handler);
      void fft_calculate_mainfreq(FFT_Handler* handler);
      void fft_calculate_rms(FFT_Handler* handler);
+     void fft_calculate_vpp(FFT_Handler* handler);
+     static void fft_myfly(FFT_Handler* handler);
+
+
+     void fft_calculate_over2(FFT_Handler* handler);
 
 
 #ifdef __cplusplus
