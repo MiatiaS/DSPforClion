@@ -68,10 +68,24 @@ include CMakeFiles/DSPforClion.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DSPforClion.elf.dir/flags.make
 
+CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Software/fft_disp.c
+CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Software\fft_disp.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Software\fft_disp.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Software\fft_disp.c
+
+CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Software\fft_disp.c > CMakeFiles\DSPforClion.elf.dir\Core\Software\fft_disp.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Software\fft_disp.c -o CMakeFiles\DSPforClion.elf.dir\Core\Software\fft_disp.c.s
+
 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Software/myfft.c
 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Software\myfft.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Software\myfft.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Software\myfft.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.i: cmake_force
@@ -85,7 +99,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/adc.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\adc.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\adc.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\adc.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.i: cmake_force
@@ -99,7 +113,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/dma.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\dma.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\dma.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\dma.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/gpio.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\gpio.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\gpio.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -127,7 +141,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/lcd.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\lcd.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\lcd.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\lcd.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/lcd_init.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\lcd_init.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\lcd_init.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\lcd_init.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/main.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\main.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\main.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/memorymap.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\memorymap.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\memorymap.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\memorymap.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/memorymap.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/spi.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\spi.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\spi.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\spi.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/stm32h7xx_hal_msp.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\stm32h7xx_hal_msp.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\stm32h7xx_hal_msp.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\stm32h7xx_hal_msp.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/stm32h7xx_it.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\stm32h7xx_it.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\stm32h7xx_it.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\stm32h7xx_it.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/syscalls.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\syscalls.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\syscalls.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/sysmem.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\sysmem.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\sysmem.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -253,7 +267,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/system_stm32h7xx.c
 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\system_stm32h7xx.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\system_stm32h7xx.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\system_stm32h7xx.c
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.i: cmake_force
@@ -264,9 +278,37 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.s"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\system_stm32h7xx.c -o CMakeFiles\DSPforClion.elf.dir\Core\Src\system_stm32h7xx.c.s
 
+CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/tim.c
+CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\tim.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\tim.c
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\tim.c > CMakeFiles\DSPforClion.elf.dir\Core\Src\tim.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\tim.c -o CMakeFiles\DSPforClion.elf.dir\Core\Src\tim.c.s
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/usart.c
+CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Core\Src\usart.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\usart.c
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\usart.c > CMakeFiles\DSPforClion.elf.dir\Core\Src\usart.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Src\usart.c -o CMakeFiles\DSPforClion.elf.dir\Core\Src\usart.c.s
+
 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Startup/startup_stm32h743vitx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM object CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building ASM object CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\DSPforClion.elf.dir\Core\Startup\startup_stm32h743vitx.s.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Core\Startup\startup_stm32h743vitx.s
 
 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.i: cmake_force
@@ -280,7 +322,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.s: cmake_for
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i: cmake_force
@@ -294,7 +336,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i: cmake_force
@@ -308,7 +350,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ad
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i: cmake_force
@@ -322,7 +364,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ad
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i: cmake_force
@@ -336,7 +378,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_co
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i: cmake_force
@@ -350,7 +392,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dm
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i: cmake_force
@@ -364,7 +406,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dm
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i: cmake_force
@@ -378,7 +420,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ex
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i: cmake_force
@@ -392,7 +434,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fl
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i: cmake_force
@@ -406,7 +448,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fl
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i: cmake_force
@@ -420,7 +462,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gp
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i: cmake_force
@@ -434,7 +476,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hs
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i: cmake_force
@@ -448,7 +490,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i: cmake_force
@@ -462,7 +504,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i: cmake_force
@@ -476,7 +518,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_md
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i: cmake_force
@@ -490,7 +532,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pw
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i: cmake_force
@@ -504,7 +546,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pw
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i: cmake_force
@@ -518,7 +560,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rc
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i: cmake_force
@@ -532,7 +574,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rc
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.i: cmake_force
@@ -546,7 +588,7 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sp
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c
 
 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.i: cmake_force
@@ -557,8 +599,65 @@ CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.s"
 	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c.s
 
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c > CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.s
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c > CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.s
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c > CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.s
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/flags.make
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: CMakeFiles/DSPforClion.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj -MF CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.obj.d -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.obj -c C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c > CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.i
+
+CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s"
+	C:\ProgramData\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\20614\Desktop\STM32Project\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c -o CMakeFiles\DSPforClion.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.s
+
 # Object files for target DSPforClion.elf
 DSPforClion_elf_OBJECTS = \
+"CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj" \
@@ -573,6 +672,8 @@ DSPforClion_elf_OBJECTS = \
 "CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj" \
+"CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj" \
+"CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj" \
@@ -593,11 +694,16 @@ DSPforClion_elf_OBJECTS = \
 "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj" \
-"CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
+"CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj" \
+"CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj" \
+"CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj" \
+"CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" \
+"CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
 
 # External object files for target DSPforClion.elf
 DSPforClion_elf_EXTERNAL_OBJECTS =
 
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
@@ -612,6 +718,8 @@ DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
@@ -633,10 +741,14 @@ DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
+DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/build.make
-DSPforClion.elf: C:/Users/20614/Desktop/STM32Project/DSPforClion/Middlewares/ST/ARM/DSP/Lib/libarm_cortexM4lf_math.a
+DSPforClion.elf: C:/Users/20614/Desktop/STM32Project/DSPforClion/libarm_cortexM7lfsp_math.a
 DSPforClion.elf: CMakeFiles/DSPforClion.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable DSPforClion.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\20614\Desktop\STM32Project\DSPforClion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking C executable DSPforClion.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DSPforClion.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/20614/Desktop/STM32Project/DSPforClion/cmake-build-debug/DSPforClion.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/20614/Desktop/STM32Project/DSPforClion/cmake-build-debug/DSPforClion.bin"

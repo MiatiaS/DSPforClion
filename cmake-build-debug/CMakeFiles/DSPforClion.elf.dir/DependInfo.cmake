@@ -35,6 +35,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Software/fft_disp.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Software/myfft.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/adc.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/dma.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj.d"
@@ -49,6 +50,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/syscalls.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/sysmem.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/system_stm32h7xx.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj.d"
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/tim.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj.d"
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Core/Src/usart.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj.d"
@@ -69,6 +72,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj.d"
   "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj.d"
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj.d"
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj.d"
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj.d"
+  "C:/Users/20614/Desktop/STM32Project/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
