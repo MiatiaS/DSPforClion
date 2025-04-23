@@ -26,7 +26,7 @@
         // 初始化FFT处理器
         FFT_Handler* FFT_Handler_Init(int fft_length)
         {
-            InitTableFFT(fft_length);
+            //InitTableFFT(fft_length);
             FFT_Handler* handler = (FFT_Handler*)malloc(sizeof(FFT_Handler));
             if (!handler) return NULL;
 

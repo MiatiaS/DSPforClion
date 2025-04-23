@@ -161,8 +161,8 @@ int main(void)
     FFT_Handler* FFT_Handler2 = FFT_Handler_Init(FFT_LENGTH);
 
 
-    FFT_Handle->adc_rate = 25000;
-    FFT_Handler2->adc_rate = 25000;
+    FFT_Handle->adc_rate = 100000;
+    FFT_Handler2->adc_rate = 100000;
   /* USER CODE END 2 */
 
   /* Infinite loop */

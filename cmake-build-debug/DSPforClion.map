@@ -2668,90 +2668,91 @@ LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/
  .text.floatfindmax
                 0x0800160c       0x9c CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
  .text.FFT_Handler_Init
-                0x080016a8       0x5a CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                0x080016a8       0x56 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
                 0x080016a8                FFT_Handler_Init
- *fill*         0x08001702        0x2 
+ *fill*         0x080016fe        0x2 
  .text.fft_calculate_harmonic
-                0x08001704       0x44 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
-                0x08001704                fft_calculate_harmonic
+                0x08001700       0x44 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                0x08001700                fft_calculate_harmonic
  .text.fft_calculate_mainfreq
-                0x08001748       0x62 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
-                0x08001748                fft_calculate_mainfreq
+                0x08001744       0x62 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                0x08001744                fft_calculate_mainfreq
  .text.fft_calculate_rms
-                0x080017aa       0x10 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
-                0x080017aa                fft_calculate_rms
+                0x080017a6       0x10 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                0x080017a6                fft_calculate_rms
  .text.fft_calculate_vpp
-                0x080017ba       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
-                0x080017ba                fft_calculate_vpp
+                0x080017b6       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                0x080017b6                fft_calculate_vpp
  .text.fft_calculate
-                0x080017ec       0xd4 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
-                0x080017ec                fft_calculate
+                0x080017e8       0xd4 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                0x080017e8                fft_calculate
  .text.MX_ADC1_Init
-                0x080018c0       0xb0 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
-                0x080018c0                MX_ADC1_Init
+                0x080018bc       0xb0 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
+                0x080018bc                MX_ADC1_Init
  .text.MX_ADC2_Init
-                0x08001970       0x98 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
-                0x08001970                MX_ADC2_Init
+                0x0800196c       0x98 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
+                0x0800196c                MX_ADC2_Init
  .text.HAL_ADC_MspInit
-                0x08001a08      0x170 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
-                0x08001a08                HAL_ADC_MspInit
+                0x08001a04      0x170 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
+                0x08001a04                HAL_ADC_MspInit
  .text.MX_DMA_Init
-                0x08001b78       0x58 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
-                0x08001b78                MX_DMA_Init
+                0x08001b74       0x58 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
+                0x08001b74                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x08001bd0       0xd0 CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj
-                0x08001bd0                MX_GPIO_Init
+                0x08001bcc       0xd0 CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj
+                0x08001bcc                MX_GPIO_Init
  .text.LCD_Fill
-                0x08001ca0       0x3c CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
-                0x08001ca0                LCD_Fill
+                0x08001c9c       0x3c CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
+                0x08001c9c                LCD_Fill
  .text.LCD_DrawPoint
-                0x08001cdc       0x14 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
-                0x08001cdc                LCD_DrawPoint
+                0x08001cd8       0x14 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
+                0x08001cd8                LCD_DrawPoint
  .text.LCD_ShowChar
-                0x08001cf0       0xec CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
-                0x08001cf0                LCD_ShowChar
+                0x08001cec       0xec CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
+                0x08001cec                LCD_ShowChar
  .text.LCD_ShowString
-                0x08001ddc       0x44 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
-                0x08001ddc                LCD_ShowString
+                0x08001dd8       0x44 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
+                0x08001dd8                LCD_ShowString
  .text.LCD_Writ_Bus
-                0x08001e20       0x3c CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
-                0x08001e20                LCD_Writ_Bus
+                0x08001e1c       0x3c CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+                0x08001e1c                LCD_Writ_Bus
  .text.LCD_WR_DATA8
-                0x08001e5c        0x8 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
-                0x08001e5c                LCD_WR_DATA8
+                0x08001e58        0x8 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+                0x08001e58                LCD_WR_DATA8
  .text.LCD_WR_DATA
-                0x08001e64       0x12 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
-                0x08001e64                LCD_WR_DATA
- *fill*         0x08001e76        0x2 
+                0x08001e60       0x12 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+                0x08001e60                LCD_WR_DATA
+ *fill*         0x08001e72        0x2 
  .text.LCD_WR_REG
-                0x08001e78       0x2c CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
-                0x08001e78                LCD_WR_REG
+                0x08001e74       0x2c CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+                0x08001e74                LCD_WR_REG
  .text.LCD_Address_Set
-                0x08001ea4       0x3e CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
-                0x08001ea4                LCD_Address_Set
- *fill*         0x08001ee2        0x2 
+                0x08001ea0       0x3e CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+                0x08001ea0                LCD_Address_Set
+ *fill*         0x08001ede        0x2 
  .text.LCD_ST7789V3_Init
-                0x08001ee4      0x1c8 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
-                0x08001ee4                LCD_ST7789V3_Init
+                0x08001ee0      0x1c8 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+                0x08001ee0                LCD_ST7789V3_Init
  .text.MPU_Config
-                0x080020ac       0x52 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
- *fill*         0x080020fe        0x2 
+                0x080020a8       0x52 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+ *fill*         0x080020fa        0x2 
  .text.HAL_ADC_ConvCpltCallback
-                0x08002100        0xc CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x08002100                HAL_ADC_ConvCpltCallback
+                0x080020fc        0xc CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x080020fc                HAL_ADC_ConvCpltCallback
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0800210c        0x2 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x0800210c                HAL_TIM_PeriodElapsedCallback
+                0x08002108        0x2 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x08002108                HAL_TIM_PeriodElapsedCallback
  .text.Error_Handler
-                0x0800210e        0x4 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x0800210e                Error_Handler
- *fill*         0x08002112        0x2 
+                0x0800210a        0x4 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x0800210a                Error_Handler
+ *fill*         0x0800210e        0x2 
  .text.SystemClock_Config
-                0x08002114       0xc4 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x08002114                SystemClock_Config
+                0x08002110       0xc4 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x08002110                SystemClock_Config
  .text.PeriphCommonClock_Config
-                0x080021d8       0x40 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x080021d8                PeriphCommonClock_Config
+                0x080021d4       0x40 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x080021d4                PeriphCommonClock_Config
+ *fill*         0x08002214        0x4 
  .text.main     0x08002218      0x358 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
                 0x08002218                main
  .text.MX_SPI2_Init
@@ -3740,7 +3741,7 @@ LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/
  .igot.plt      0x240009c0        0x0 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x240009c0                . = ALIGN (0x4)
 
-.bss            0x240009c0    0x3058c load address 0x08023d3c
+.bss            0x240009c0    0x1858c load address 0x08023d3c
                 0x240009c0                _sbss = .
                 0x240009c0                __bss_start__ = _sbss
  *(.bss)
@@ -3758,98 +3759,98 @@ LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/
  .bss.hdma_adc2
                 0x24000b20       0x78 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
                 0x24000b20                hdma_adc2
- .bss.adc_buf1  0x24000b98     0x4000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+ .bss.adc_buf1  0x24000b98     0x2000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
                 0x24000b98                adc_buf1
- .bss.adc_buf2  0x24004b98     0x4000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24004b98                adc_buf2
- .bss.adc_val1  0x24008b98     0x8000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24008b98                adc_val1
- .bss.adc_val2  0x24010b98     0x8000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24010b98                adc_val2
+ .bss.adc_buf2  0x24002b98     0x2000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24002b98                adc_buf2
+ .bss.adc_val1  0x24004b98     0x4000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24004b98                adc_val1
+ .bss.adc_val2  0x24008b98     0x4000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24008b98                adc_val2
  .bss.fft_input_temp
-                0x24018b98    0x10000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24018b98                fft_input_temp
+                0x2400cb98     0x8000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x2400cb98                fft_input_temp
  .bss.fft_output_temp
-                0x24028b98     0x8000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24028b98                fft_output_temp
+                0x24014b98     0x4000 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24014b98                fft_output_temp
  .bss.flag_adcdone
-                0x24030b98        0x4 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24030b98                flag_adcdone
- .bss.str1      0x24030b9c       0x64 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24030b9c                str1
- .bss.str3      0x24030c00       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24030c00                str3
- *fill*         0x24030c32        0x2 
- .bss.str4      0x24030c34       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24030c34                str4
- *fill*         0x24030c66        0x2 
- .bss.str5      0x24030c68       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24030c68                str5
- *fill*         0x24030c9a        0x2 
- .bss.str6      0x24030c9c       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
-                0x24030c9c                str6
- *fill*         0x24030cce        0x2 
- .bss.hspi2     0x24030cd0       0x88 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj
-                0x24030cd0                hspi2
+                0x24018b98        0x4 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24018b98                flag_adcdone
+ .bss.str1      0x24018b9c       0x64 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24018b9c                str1
+ .bss.str3      0x24018c00       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24018c00                str3
+ *fill*         0x24018c32        0x2 
+ .bss.str4      0x24018c34       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24018c34                str4
+ *fill*         0x24018c66        0x2 
+ .bss.str5      0x24018c68       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24018c68                str5
+ *fill*         0x24018c9a        0x2 
+ .bss.str6      0x24018c9c       0x32 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+                0x24018c9c                str6
+ *fill*         0x24018cce        0x2 
+ .bss.hspi2     0x24018cd0       0x88 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj
+                0x24018cd0                hspi2
  .bss.__sbrk_heap_end
-                0x24030d58        0x4 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
- .bss.htim3     0x24030d5c       0x4c CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
-                0x24030d5c                htim3
- .bss.htim6     0x24030da8       0x4c CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
-                0x24030da8                htim6
+                0x24018d58        0x4 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
+ .bss.htim3     0x24018d5c       0x4c CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
+                0x24018d5c                htim3
+ .bss.htim6     0x24018da8       0x4c CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
+                0x24018da8                htim6
  .bss.hdma_usart1_tx
-                0x24030df4       0x78 CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
-                0x24030df4                hdma_usart1_tx
- .bss.huart1    0x24030e6c       0x94 CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
-                0x24030e6c                huart1
- .bss.uwTick    0x24030f00        0x4 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x24030f00                uwTick
+                0x24018df4       0x78 CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
+                0x24018df4                hdma_usart1_tx
+ .bss.huart1    0x24018e6c       0x94 CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
+                0x24018e6c                huart1
+ .bss.uwTick    0x24018f00        0x4 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x24018f00                uwTick
  .bss.__malloc_current_mallinfo
-                0x24030f04       0x28 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
-                0x24030f04                __malloc_current_mallinfo
+                0x24018f04       0x28 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
+                0x24018f04                __malloc_current_mallinfo
  .bss.__malloc_max_sbrked_mem
-                0x24030f2c        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
-                0x24030f2c                __malloc_max_sbrked_mem
+                0x24018f2c        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
+                0x24018f2c                __malloc_max_sbrked_mem
  .bss.__malloc_max_total_mem
-                0x24030f30        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
-                0x24030f30                __malloc_max_total_mem
+                0x24018f30        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
+                0x24018f30                __malloc_max_total_mem
  .bss.__malloc_top_pad
-                0x24030f34        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
-                0x24030f34                __malloc_top_pad
+                0x24018f34        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-mallocr.o)
+                0x24018f34                __malloc_top_pad
  .bss.__lock___atexit_recursive_mutex
-                0x24030f38        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x24030f38                __lock___atexit_recursive_mutex
- *fill*         0x24030f39        0x3 
+                0x24018f38        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x24018f38                __lock___atexit_recursive_mutex
+ *fill*         0x24018f39        0x3 
  .bss.__lock___malloc_recursive_mutex
-                0x24030f3c        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x24030f3c                __lock___malloc_recursive_mutex
- *fill*         0x24030f3d        0x3 
+                0x24018f3c        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x24018f3c                __lock___malloc_recursive_mutex
+ *fill*         0x24018f3d        0x3 
  .bss.__lock___sfp_recursive_mutex
-                0x24030f40        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x24030f40                __lock___sfp_recursive_mutex
- *fill*         0x24030f41        0x3 
+                0x24018f40        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x24018f40                __lock___sfp_recursive_mutex
+ *fill*         0x24018f41        0x3 
  .bss.__lock___sinit_recursive_mutex
-                0x24030f44        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
-                0x24030f44                __lock___sinit_recursive_mutex
- *fill*         0x24030f45        0x3 
- .bss.errno     0x24030f48        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-reent.o)
-                0x24030f48                errno
+                0x24018f44        0x1 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-lock.o)
+                0x24018f44                __lock___sinit_recursive_mutex
+ *fill*         0x24018f45        0x3 
+ .bss.errno     0x24018f48        0x4 c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg.a(lib_a-reent.o)
+                0x24018f48                errno
  *(COMMON)
-                0x24030f4c                . = ALIGN (0x4)
-                0x24030f4c                _ebss = .
-                0x24030f4c                __bss_end__ = _ebss
+                0x24018f4c                . = ALIGN (0x4)
+                0x24018f4c                _ebss = .
+                0x24018f4c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x24030f4c      0x604 load address 0x08023d3c
-                0x24030f50                . = ALIGN (0x8)
- *fill*         0x24030f4c        0x4 
+                0x24018f4c      0x604 load address 0x08023d3c
+                0x24018f50                . = ALIGN (0x8)
+ *fill*         0x24018f4c        0x4 
                 [!provide]                PROVIDE (end = .)
-                0x24030f50                PROVIDE (_end = .)
-                0x24031150                . = (. + _Min_Heap_Size)
- *fill*         0x24030f50      0x200 
-                0x24031550                . = (. + _Min_Stack_Size)
- *fill*         0x24031150      0x400 
-                0x24031550                . = ALIGN (0x8)
+                0x24018f50                PROVIDE (_end = .)
+                0x24019150                . = (. + _Min_Heap_Size)
+ *fill*         0x24018f50      0x200 
+                0x24019550                . = (. + _Min_Stack_Size)
+ *fill*         0x24019150      0x400 
+                0x24019550                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -4079,44 +4080,44 @@ LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/
 LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x335df
+.debug_info     0x00000000    0x335bf
  .debug_info    0x00000000      0x2fd CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj
  .debug_info    0x000002fd      0x4e9 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj
- .debug_info    0x000007e6      0xc46 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
- .debug_info    0x0000142c     0x11df CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
- .debug_info    0x0000260b      0x8d5 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
- .debug_info    0x00002ee0      0x6ca CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x000035aa     0x14d9 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
- .debug_info    0x00004a83     0x24ce CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
- .debug_info    0x00006f51     0x2f89 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00009eda     0x11a0 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj
- .debug_info    0x0000b07a      0x4a0 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_info    0x0000b51a      0xd06 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_info    0x0000c220      0x7af CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj
- .debug_info    0x0000c9cf      0x174 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x0000cb43      0xdf5 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_info    0x0000d938     0x12d4 CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x0000ec0c     0x166d CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x00010279       0x22 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj
- .debug_info    0x0001029b     0x16a0 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_info    0x0001193b     0x314d CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
- .debug_info    0x00014a88     0x3324 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
- .debug_info    0x00017dac     0x143d CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_info    0x000191e9      0xff6 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
- .debug_info    0x0001a1df      0xd76 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_info    0x0001af55     0x1238 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_info    0x0001c18d     0x123b CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_info    0x0001d3c8     0x1ad9 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_info    0x0001eea1     0x1b35 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_info    0x000209d6     0x4032 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
- .debug_info    0x00024a08     0x1e7d CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
- .debug_info    0x00026885     0x6762 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
- .debug_info    0x0002cfe7     0x1256 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
- .debug_info    0x0002e23d      0xbc3 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_rms_f32.o)
- .debug_info    0x0002ee00      0xb3c C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_min_f32.o)
- .debug_info    0x0002f93c      0xb3c C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_max_f32.o)
- .debug_info    0x00030478     0x16e3 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_cfft_radix4_init_f32.o)
- .debug_info    0x00031b5b     0x1a84 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_common_tables.o)
+ .debug_info    0x000007e6      0xc26 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+ .debug_info    0x0000140c     0x11df CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
+ .debug_info    0x000025eb      0x8d5 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
+ .debug_info    0x00002ec0      0x6ca CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000358a     0x14d9 CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
+ .debug_info    0x00004a63     0x24ce CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+ .debug_info    0x00006f31     0x2f89 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00009eba     0x11a0 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj
+ .debug_info    0x0000b05a      0x4a0 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_info    0x0000b4fa      0xd06 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_info    0x0000c200      0x7af CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x0000c9af      0x174 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x0000cb23      0xdf5 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_info    0x0000d918     0x12d4 CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x0000ebec     0x166d CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x00010259       0x22 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj
+ .debug_info    0x0001027b     0x16a0 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_info    0x0001191b     0x314d CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
+ .debug_info    0x00014a68     0x3324 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
+ .debug_info    0x00017d8c     0x143d CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_info    0x000191c9      0xff6 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
+ .debug_info    0x0001a1bf      0xd76 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_info    0x0001af35     0x1238 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_info    0x0001c16d     0x123b CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_info    0x0001d3a8     0x1ad9 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_info    0x0001ee81     0x1b35 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_info    0x000209b6     0x4032 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_info    0x000249e8     0x1e7d CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_info    0x00026865     0x6762 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
+ .debug_info    0x0002cfc7     0x1256 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
+ .debug_info    0x0002e21d      0xbc3 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_rms_f32.o)
+ .debug_info    0x0002ede0      0xb3c C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_min_f32.o)
+ .debug_info    0x0002f91c      0xb3c C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_max_f32.o)
+ .debug_info    0x00030458     0x16e3 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_info    0x00031b3b     0x1a84 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_common_tables.o)
 
 .debug_abbrev   0x00000000     0x4e95
  .debug_abbrev  0x00000000      0x135 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj
@@ -4343,80 +4344,80 @@ LOAD c:/programdata/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/
  .debug_line    0x00023830      0x374 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_cfft_radix4_init_f32.o)
  .debug_line    0x00023ba4      0x243 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_common_tables.o)
 
-.debug_str      0x00000000     0x98ad
+.debug_str      0x00000000     0x98a0
  .debug_str     0x00000000      0x298 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj
                                 0x2fb (size before relaxing)
  .debug_str     0x00000298      0x230 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj
                                 0x451 (size before relaxing)
- .debug_str     0x000004c8      0x327 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
-                                0x689 (size before relaxing)
- .debug_str     0x000007ef      0x997 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
+ .debug_str     0x000004c8      0x31a CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj
+                                0x67c (size before relaxing)
+ .debug_str     0x000007e2      0x997 CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj
                                 0xc77 (size before relaxing)
- .debug_str     0x00001186      0x867 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
+ .debug_str     0x00001179      0x867 CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj
                                 0xc8a (size before relaxing)
- .debug_str     0x000019ed       0x7a CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj
+ .debug_str     0x000019e0       0x7a CMakeFiles/DSPforClion.elf.dir/Core/Src/gpio.c.obj
                                 0x504 (size before relaxing)
- .debug_str     0x00001a67      0x21e CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
+ .debug_str     0x00001a5a      0x21e CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd.c.obj
                                 0x433 (size before relaxing)
- .debug_str     0x00001c85      0x34b CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
+ .debug_str     0x00001c78      0x34b CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj
                                 0x926 (size before relaxing)
- .debug_str     0x00001fd0     0x11d6 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x00001fc3     0x11d6 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj
                                0x1d65 (size before relaxing)
- .debug_str     0x000031a6       0x77 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj
+ .debug_str     0x00003199       0x77 CMakeFiles/DSPforClion.elf.dir/Core/Src/spi.c.obj
                                 0xec2 (size before relaxing)
- .debug_str     0x0000321d       0x58 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_str     0x00003210       0x58 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
                                 0x453 (size before relaxing)
- .debug_str     0x00003275      0x196 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_str     0x00003268      0x196 CMakeFiles/DSPforClion.elf.dir/Core/Src/stm32h7xx_it.c.obj
                                 0xc57 (size before relaxing)
- .debug_str     0x0000340b      0x22b CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x000033fe      0x22b CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj
                                 0x458 (size before relaxing)
- .debug_str     0x00003636       0xa1 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00003629       0xa1 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj
                                 0x284 (size before relaxing)
- .debug_str     0x000036d7      0x373 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_str     0x000036ca      0x373 CMakeFiles/DSPforClion.elf.dir/Core/Src/system_stm32h7xx.c.obj
                                 0x7cf (size before relaxing)
- .debug_str     0x00003a4a      0x210 CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
+ .debug_str     0x00003a3d      0x210 CMakeFiles/DSPforClion.elf.dir/Core/Src/tim.c.obj
                                0x14f9 (size before relaxing)
- .debug_str     0x00003c5a       0xd4 CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x00003c4d       0xd4 CMakeFiles/DSPforClion.elf.dir/Core/Src/usart.c.obj
                                0x1775 (size before relaxing)
- .debug_str     0x00003d2e       0x62 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj
+ .debug_str     0x00003d21       0x62 CMakeFiles/DSPforClion.elf.dir/Core/Startup/startup_stm32h743vitx.s.obj
                                  0xa3 (size before relaxing)
- .debug_str     0x00003d90      0x6b2 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_str     0x00003d83      0x6b2 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
                                0x1511 (size before relaxing)
- .debug_str     0x00004442      0x9c8 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
+ .debug_str     0x00004435      0x9c8 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
                                0x13e0 (size before relaxing)
- .debug_str     0x00004e0a      0x729 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
+ .debug_str     0x00004dfd      0x729 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
                                0x14b0 (size before relaxing)
- .debug_str     0x00005533      0x3ef CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_str     0x00005526      0x3ef CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
                                0x10e1 (size before relaxing)
- .debug_str     0x00005922      0x3be CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
+ .debug_str     0x00005915      0x3be CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
                                 0xa2c (size before relaxing)
- .debug_str     0x00005ce0       0xf4 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_str     0x00005cd3       0xf4 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
                                 0x735 (size before relaxing)
- .debug_str     0x00005dd4      0x562 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_str     0x00005dc7      0x562 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
                                 0xaaa (size before relaxing)
- .debug_str     0x00006336      0x1aa CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_str     0x00006329      0x1aa CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
                                 0xa7b (size before relaxing)
- .debug_str     0x000064e0      0x5d6 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_str     0x000064d3      0x5d6 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
                                 0xf86 (size before relaxing)
- .debug_str     0x00006ab6      0x549 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_str     0x00006aa9      0x549 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
                                 0xe35 (size before relaxing)
- .debug_str     0x00006fff      0xdc0 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+ .debug_str     0x00006ff2      0xdc0 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
                                0x1894 (size before relaxing)
- .debug_str     0x00007dbf      0x644 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+ .debug_str     0x00007db2      0x644 CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
                                0x11a1 (size before relaxing)
- .debug_str     0x00008403      0x89f CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
+ .debug_str     0x000083f6      0x89f CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
                                0x1514 (size before relaxing)
- .debug_str     0x00008ca2      0x26e CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
+ .debug_str     0x00008c95      0x26e CMakeFiles/DSPforClion.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
                                 0xbfd (size before relaxing)
- .debug_str     0x00008f10      0x1f8 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_rms_f32.o)
+ .debug_str     0x00008f03      0x1f8 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_rms_f32.o)
                                 0x721 (size before relaxing)
- .debug_str     0x00009108       0x46 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_min_f32.o)
+ .debug_str     0x000090fb       0x46 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_min_f32.o)
                                 0x68d (size before relaxing)
- .debug_str     0x0000914e       0x36 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_max_f32.o)
+ .debug_str     0x00009141       0x36 C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_max_f32.o)
                                 0x68d (size before relaxing)
- .debug_str     0x00009184      0x6fb C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_str     0x00009177      0x6fb C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_cfft_radix4_init_f32.o)
                                 0xe73 (size before relaxing)
- .debug_str     0x0000987f       0x2e C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_common_tables.o)
+ .debug_str     0x00009872       0x2e C:\Users\20614\Desktop\DSPforClion\DSPforClion\libarm_cortexM7lfsp_math.a(arm_common_tables.o)
                                 0xd1f (size before relaxing)
 
 .comment        0x00000000       0xbe
