@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/20614/Desktop/STM32Project/DSPforClion/cmake-build-debug"
+			"value" : "c:/Users/20614/Desktop/DSPforClion/DSPforClion/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/20614/Desktop/STM32Project/DSPforClion/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/20614/Desktop/DSPforClion/DSPforClion/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/20614/Desktop/STM32Project/DSPforClion"
+			"value" : "C:/Users/20614/Desktop/DSPforClion/DSPforClion"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/20614/Desktop/STM32Project/DSPforClion/cmake-build-debug"
+			"value" : "C:/Users/20614/Desktop/DSPforClion/DSPforClion/cmake-build-debug"
 		},
 		{
 			"name" : "DSPforClion_IS_TOP_LEVEL",
@@ -1183,7 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/20614/Desktop/STM32Project/DSPforClion"
+			"value" : "C:/Users/20614/Desktop/DSPforClion/DSPforClion"
 		}
 	],
 	"kind" : "cache",

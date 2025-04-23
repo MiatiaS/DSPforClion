@@ -1,0 +1,8 @@
+../Core/Software/myfft.c:42:14:FFT_Handler_Init	24	static
+../Core/Software/myfft.c:64:6:FFT_Handler_Free	16	static
+../Core/Software/myfft.c:73:6:fft_calculate	24	static
+../Core/Software/myfft.c:97:6:fft_calculate_harmonic	24	static
+../Core/Software/myfft.c:109:6:fft_calculate_mainfreq	24	static
+../Core/Software/myfft.c:124:6:fft_calculate_rms	16	static
+../Core/Software/myfft.c:136:14:floatfindmax	56	static
+../Core/Software/myfft.c:165:14:floatfindmin	24	static
