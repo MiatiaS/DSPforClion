@@ -7,6 +7,7 @@
 
      /* 依赖头文件 */
 #include "arm_math.h"
+#include "fft.h"
 #include <stdint.h>
      /* 实例代码 */
      /*
@@ -51,10 +52,10 @@ FFT_Handler_Free(fft);
          /* 内部缓冲区（由init函数分配）*/
          float* FFT_InputBuf;    // FFT输入缓冲区(实部+虚部)
          float* FFT_OutputBuf;   // FFT幅度输出缓冲区
-         float* FFT_InputBuf_over2;//FFT蝶形运算翻倍(实部+虚部)
+                float* FFT_InputBuf_over2;//FFT蝶形运算翻倍(实部+虚部)
          float* FFT_OutputBuf_over2;//FFT蝶形运算翻倍
 
-
+         struct compx* buffer ;
          /* FFT实例 */
          arm_cfft_radix4_instance_f32 scfft;  // CMSIS-DSP FFT实例
      } FFT_Handler;

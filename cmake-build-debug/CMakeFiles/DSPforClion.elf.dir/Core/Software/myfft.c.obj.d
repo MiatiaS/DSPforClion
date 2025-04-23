@@ -35,4 +35,5 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h
