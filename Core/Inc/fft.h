@@ -26,7 +26,7 @@
 #include "math.h"
 #include "arm_math.h"
 
-#define   MAX_FFT_N		 32768
+#define   MAX_FFT_N		 8192
 
 struct  compx
 {

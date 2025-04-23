@@ -32,6 +32,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include-fixed\syslimits.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\limits.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\syslimits.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_phase.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \

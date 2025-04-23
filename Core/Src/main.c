@@ -65,7 +65,7 @@
   float adc_val2[FFT_LENGTH];
   float adc_val1[FFT_LENGTH];
 
-  char str1[50];
+  char str1[100];
   char str2[50];
   char str3[50];
   char str4[50];
@@ -78,7 +78,7 @@
 
   uint32_t time_idx;
   float time_float ;
-
+  float fft_input_temp[FFT_LENGTH*2];
   float fft_output_temp[FFT_LENGTH]; //用于存储数组，便于debug直接查看
 /* USER CODE END PV */
 
@@ -94,7 +94,7 @@ static void MPU_Config(void);
 /* USER CODE BEGIN 0 */
   int fputc(int ch, FILE *f)
   {
-    HAL_UART_Transmit(&huart1, (uint8_t *)&ch,1,0xFFFF);
+    HAL_UART_Transmit_DMA(&huart1, (uint8_t *)&ch,1);
     return ch;
   }
 /* USER CODE END 0 */
@@ -147,17 +147,20 @@ int main(void)
     LCD_ST7789V3_Init();
     HAL_ADCEx_Calibration_Start(&hadc2,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc1,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
+    HAL_Delay(200);
     HAL_TIM_Base_Start(&htim6); //TIM6同步触发两个ADC进行采样
 
     HAL_TIM_Base_Start_IT(&htim3); //TIM5 用于做时间定时
 
-    HAL_Delay(200);
+
     HAL_ADC_Start_DMA(&hadc2,adc_buf2,FFT_LENGTH);
     HAL_ADC_Start_DMA(&hadc1,adc_buf1,FFT_LENGTH);
     LCD_Fill(0,0,320,240,BLACK);
     //FFT Init
     FFT_Handler* FFT_Handle = FFT_Handler_Init(FFT_LENGTH);
     FFT_Handler* FFT_Handler2 = FFT_Handler_Init(FFT_LENGTH);
+
+
     FFT_Handle->adc_rate = 25000;
     FFT_Handler2->adc_rate = 25000;
   /* USER CODE END 2 */
@@ -192,7 +195,12 @@ int main(void)
         float fft_fv = (float)FFT_Handle->fft_fv;
         for (int i = 0;i<FFT_LENGTH;i++)
         {
-          fft_output_temp[i] = FFT_Handle->FFT_OutputBuf[i] ;
+          fft_output_temp[i] = FFT_Handle->FFT_OutputBuf[i];
+        }
+
+        for (int i = 0;i<FFT_LENGTH*2;i++)
+        {
+          fft_input_temp[i] = FFT_Handle->FFT_InputBuf[i];
         }
       /************************************实验性代码,FFT_OVER2*************************************/
 
@@ -201,10 +209,10 @@ int main(void)
       /************************************显示&&串口发送*******************************************/
         for (int i =0; i < FFT_LENGTH; i++)
         {
-          sprintf(str1,"val:%5f,%5f,%5f\r\n",adc_val1[i],(float)i/1000,fft_output_temp[i]);
+          sprintf(str1,"val:%3f,%3f,%3f\r\n",adc_val1[i],(float)i/1000,fft_output_temp[i]);
           HAL_UART_Transmit_DMA(&huart1,str1,sizeof(str1));
         }
-        sprintf(str3, "Freq: %.1f Hz", FFT_Handle->fft_fv );
+        sprintf(str3, "Freq: %.1f Hz", FFT_Handle->fft_fv);
         LCD_ShowString(30, 50, str3 ,WHITE, BLACK, 16, 0);
         // 显示电压有效值
         sprintf(str4, "Vpp: %.5f V", FFT_Handle->fft_vpp);
