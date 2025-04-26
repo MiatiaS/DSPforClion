@@ -69,11 +69,12 @@
             }
 
             // 执行FFT计算
-           //arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
-            //这时候的FFT_InputBuf同时保存着实部和虚部的信息
-            // 计算幅度
-            //arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
+          // arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
+          // arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
+
+
             ultrafft(handler);
+
             fft_calculate_mainfreq(handler);
             fft_calculate_harmonic(handler);
             fft_calculate_rms(handler);
