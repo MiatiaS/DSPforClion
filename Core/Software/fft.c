@@ -25,7 +25,7 @@
 /* 记录了8192和16384点FFT的sin和cos值 */
 #if MAX_FFT_N == 8192
 
-const float32_t sintab[4096] = {
+extern const float32_t sintab[4096] = {
 0.00000000000f,
 0.00076699036f,
 0.00153398025f,
@@ -4124,7 +4124,7 @@ const float32_t sintab[4096] = {
 0.00076690508f,
 };
 
-const float32_t costab[4096] = {
+extern const float32_t costab[4096] = {
 1.00000000000f,
 0.99999970198f,
 0.99999880791f,
@@ -24691,9 +24691,9 @@ void cfft(struct compx *_ptr, uint32_t FFT_N )
 		*/
 		if(i<j)
 		{
-			TempReal1  = _ptr[j].real;
-			_ptr[j].real= _ptr[i].real;
-			_ptr[i].real= TempReal1;
+		    struct compx temp = _ptr[j];
+		    _ptr[j] = _ptr[i];
+		    _ptr[i] = temp;
 		}
 
 		k=z;                    				  /*求j的下一个倒位序 */

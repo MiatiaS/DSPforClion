@@ -15,7 +15,7 @@
 	输入：coefficient是幅度缩放比例
 	修改横轴宽度请到.c操作
 */
-void fft_freq_disp(FFT_Handler* FFT_Handle,int coefficient)
+void fft_freq_disp(FFT_Handler* FFT_Handle,float coefficient)
 {
  	int idx_width = FFT_Handle->FFT_LENGTH / Screen_Width / 2; //规定每一个像素点间的FFT点数间隔,
     int i;

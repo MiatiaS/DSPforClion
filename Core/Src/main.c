@@ -178,8 +178,8 @@ int main(void)
           FFT_Handle2->adc_val[i] = (float)FFT_Handle2->adc_buf[i] /ADC_RANGE * 3.3;
         }
         //加窗运算
-        window_calculate(FFT_Handle->adc_val,FFT_LENGTH,0);
-        window_calculate(FFT_Handle2->adc_val,FFT_LENGTH,0);
+        window_calculate(FFT_Handle->adc_val,FFT_LENGTH,1);
+        window_calculate(FFT_Handle2->adc_val,FFT_LENGTH,1);
         //不放中断，害怕中断更改val数据
 
         LCD_ShowString(30,20,"hello world",WHITE,BLACK,32,0);
@@ -219,10 +219,10 @@ int main(void)
         sprintf(str6, "Phase: %.5f deg",phase);
         LCD_ShowString(30, 110, str6, WHITE, BLACK, 16, 0);
 
-        fft_freq_disp(FFT_Handle,10);
+        fft_freq_disp(FFT_Handle,0.1);
 
         HAL_Delay(1000);
-        LCD_Fill(0,160,320,240,BLACK);
+        LCD_Fill(0,0,320,240,BLACK);
         flag_adcdone = 0;
 
 

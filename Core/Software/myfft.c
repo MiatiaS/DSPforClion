@@ -127,7 +127,7 @@
          */
         void fft_calculate_mainfreq(FFT_Handler* handler)
         {
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 2; i++)
             {
                 handler->FFT_OutputBuf[i] = 0.0; // 去除直流分量,这是为了找第一个峰值
             }
