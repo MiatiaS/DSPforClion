@@ -24,27 +24,29 @@
         static float floatfindmin(float* array, int length, int number);
 
         // 初始化FFT处理器
-        FFT_Handler* FFT_Handler_Init(int fft_length)
+        FFT_Handler* FFT_Handler_Init(uint32_t fft_length)
         {
             //InitTableFFT(fft_length);
             FFT_Handler* handler = (FFT_Handler*)malloc(sizeof(FFT_Handler));
             if (!handler) return NULL;
-
             handler->FFT_LENGTH = fft_length;
-
             // 分配中间缓冲区内存
+            handler->adc_buf = (uint16_t*)malloc(fft_length * sizeof(uint16_t));
+            handler->adc_val = (float*)malloc(fft_length * sizeof(float));
             handler->FFT_InputBuf  = (float*)malloc(2 * fft_length * sizeof(float));
             handler->FFT_OutputBuf = (float*)malloc(fft_length * sizeof(float));
             handler->buffer = (struct compx*)malloc(handler->FFT_LENGTH * sizeof(struct compx));
             if (handler->buffer == NULL)
                 return;
             // 初始化FFT实例
+            /*
             if (arm_cfft_radix4_init_f32(&handler->scfft, fft_length, 0, 1) != ARM_MATH_SUCCESS) {
                 free(handler->FFT_InputBuf);
                 free(handler->FFT_OutputBuf);
                 free(handler);
                 return NULL;
             }
+            */
             return handler;
         }
 
@@ -71,12 +73,26 @@
             //这时候的FFT_InputBuf同时保存着实部和虚部的信息
             // 计算幅度
             //arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
+            ultrafft(handler);
+            fft_calculate_mainfreq(handler);
+            fft_calculate_harmonic(handler);
+            fft_calculate_rms(handler);
+            fft_calculate_vpp(handler);
 
+        }
+
+
+
+        void ultrafft(FFT_Handler* handler)
+        {
             for (int i = 0; i < handler->FFT_LENGTH; i++)
             {
                 handler->buffer[i].real = handler->adc_val[i];  // 从ADC获取实数输入
                 handler->buffer[i].imag = 0.0f;                // 虚部初始化为0
             }
+            //memset设置
+
+
             cfft(handler->buffer, handler->FFT_LENGTH);
             for (int i = 0; i < handler->FFT_LENGTH; i++)
             {
@@ -90,17 +106,7 @@
                     handler->buffer[i].imag * handler->buffer[i].imag
                 );
             }
-
-            fft_calculate_mainfreq(handler);
-            fft_calculate_harmonic(handler);
-            fft_calculate_rms(handler);
-            fft_calculate_vpp(handler);
-
         }
-
-
-
-
 
         /*
          *@brief：计算信号主峰与次峰的比值
@@ -121,8 +127,10 @@
          */
         void fft_calculate_mainfreq(FFT_Handler* handler)
         {
-            handler->FFT_OutputBuf[0] = 0.0; // 去除直流分量,这是为了找第一个峰值
-
+            for (int i = 0; i < 1; i++)
+            {
+                handler->FFT_OutputBuf[i] = 0.0; // 去除直流分量,这是为了找第一个峰值
+            }
             // 查找最大值索引
             uint32_t index_max;
             arm_max_f32(handler->FFT_OutputBuf, handler->FFT_LENGTH / 2, &handler->fft_vpp, &index_max);
@@ -218,7 +226,7 @@
             }
 
         };
-
+/*
         static void fft_myfly(FFT_Handler* handler) {
             int N = 8192; // 总长度
             int N_OVER_2 = 4096;
@@ -272,3 +280,4 @@
             free(Inputbuf_even);
             free(Inputbuf_odd);
         }
+*/

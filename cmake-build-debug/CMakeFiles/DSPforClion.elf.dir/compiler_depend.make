@@ -163,29 +163,48 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj: C:/Users/20614/De
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Middlewares/ST/ARM/DSP/Inc/arm_math.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/limits.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_endian.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/endian.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/malloc.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/malloc.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdio.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_pthreadtypes.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_sigset.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_timespec.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_timeval.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/sched.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/select.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/syslimits.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/timespec.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/types.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/float.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
@@ -530,6 +549,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: C:/Users/20614/Desktop/DSPfo
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_disp.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_phase.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_window.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/gpio.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd_init.h \
@@ -2665,11 +2685,15 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/fft_window.c:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_window.h:
 
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/myfft.c:
+C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/malloc.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/lcd_init.c:
 
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h:
+
+C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/malloc.h:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/myfft.c:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/adc.c:
 

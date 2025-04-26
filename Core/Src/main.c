@@ -35,6 +35,7 @@
   #include "lcd_init.h"
   #include "myfft.h"
   #include "fft_phase.h"
+  #include "fft_window.h"
   #include "fft_disp.h"
 /* USER CODE END Includes */
 
@@ -56,14 +57,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-  #define FFT_LENGTH 4096
+  #define FFT_LENGTH 8192
   #define ADC_RANGE  4095
   //数字量
-  uint16_t adc_buf2[FFT_LENGTH];
-  uint16_t adc_buf1[FFT_LENGTH];
-  //模拟量
-  float adc_val2[FFT_LENGTH];
-  float adc_val1[FFT_LENGTH];
+
 
   char str1[100];
   char str2[50];
@@ -148,21 +145,20 @@ int main(void)
     HAL_ADCEx_Calibration_Start(&hadc2,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc1,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_Delay(200);
-    HAL_TIM_Base_Start(&htim6); //TIM6同步触发两个ADC进行采样
 
+    FFT_Handler* FFT_Handle = FFT_Handler_Init(FFT_LENGTH);
+    FFT_Handler* FFT_Handle2 = FFT_Handler_Init(FFT_LENGTH);
+    FFT_Handle->adc_rate = 100000;
+    FFT_Handle2->adc_rate = 100000;
+    HAL_TIM_Base_Start(&htim6); //TIM6同步触发两个ADC进行采样
     HAL_TIM_Base_Start_IT(&htim3); //TIM5 用于做时间定时
 
 
-    HAL_ADC_Start_DMA(&hadc2,adc_buf2,FFT_LENGTH);
-    HAL_ADC_Start_DMA(&hadc1,adc_buf1,FFT_LENGTH);
+    HAL_ADC_Start_DMA(&hadc2,FFT_Handle->adc_buf,FFT_LENGTH);
+    HAL_ADC_Start_DMA(&hadc1,FFT_Handle2->adc_buf,FFT_LENGTH);
     LCD_Fill(0,0,320,240,BLACK);
     //FFT Init
-    FFT_Handler* FFT_Handle = FFT_Handler_Init(FFT_LENGTH);
-    FFT_Handler* FFT_Handler2 = FFT_Handler_Init(FFT_LENGTH);
 
-
-    FFT_Handle->adc_rate = 100000;
-    FFT_Handler2->adc_rate = 100000;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -178,19 +174,18 @@ int main(void)
 
         for (int i = 0;i<FFT_LENGTH;i++)
         {
-          adc_val1[i] = (float)adc_buf1[i] /ADC_RANGE * 3.3;
-          adc_val2[i] = (float)adc_buf2[i] /ADC_RANGE * 3.3;
+          FFT_Handle->adc_val[i] = (float)FFT_Handle->adc_buf[i] /ADC_RANGE * 3.3;
+          FFT_Handle2->adc_val[i] = (float)FFT_Handle2->adc_buf[i] /ADC_RANGE * 3.3;
         }
-
-
+        //加窗运算
+        window_calculate(FFT_Handle->adc_val,FFT_LENGTH,0);
+        window_calculate(FFT_Handle2->adc_val,FFT_LENGTH,0);
         //不放中断，害怕中断更改val数据
-        FFT_Handle->adc_val = adc_val1;
-        FFT_Handler2->adc_val = adc_val2;
 
         LCD_ShowString(30,20,"hello world",WHITE,BLACK,32,0);
         fft_calculate(FFT_Handle);
-        fft_calculate(FFT_Handler2);
-        float phase = fft_calculate_phase(FFT_Handle,FFT_Handler2);
+        fft_calculate(FFT_Handle2);
+        float phase = fft_calculate_phase(FFT_Handle,FFT_Handle2);
 
         float fft_fv = (float)FFT_Handle->fft_fv;
         for (int i = 0;i<FFT_LENGTH;i++)
@@ -209,7 +204,7 @@ int main(void)
       /************************************显示&&串口发送*******************************************/
         for (int i =0; i < FFT_LENGTH; i++)
         {
-          sprintf(str1,"val:%3f,%3f,%3f\r\n",adc_val1[i],(float)i/1000,fft_output_temp[i]);
+          sprintf(str1,"val:%3f,%3f,%3f\r\n",FFT_Handle->adc_val[i],(float)i/1000,fft_output_temp[i]);
           HAL_UART_Transmit_DMA(&huart1,str1,sizeof(str1));
         }
         sprintf(str3, "Freq: %.1f Hz", FFT_Handle->fft_fv);
@@ -224,14 +219,17 @@ int main(void)
         sprintf(str6, "Phase: %.5f deg",phase);
         LCD_ShowString(30, 110, str6, WHITE, BLACK, 16, 0);
 
+        fft_freq_disp(FFT_Handle,10);
+
         HAL_Delay(1000);
+        LCD_Fill(0,160,320,240,BLACK);
         flag_adcdone = 0;
 
 
-
+    /**********************重新启动ADC******************************/
       HAL_TIM_Base_Start(&htim6);
-      HAL_ADC_Start_DMA(&hadc1,adc_buf1,FFT_LENGTH);
-      HAL_ADC_Start_DMA(&hadc2,adc_buf2,FFT_LENGTH);
+      HAL_ADC_Start_DMA(&hadc1,FFT_Handle->adc_buf,FFT_LENGTH);
+      HAL_ADC_Start_DMA(&hadc2,FFT_Handle2->adc_buf,FFT_LENGTH);
 
 
 
