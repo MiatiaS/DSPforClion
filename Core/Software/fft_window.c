@@ -7,14 +7,12 @@
 #include "arm_math.h"
 #include "malloc.h"
 /*
-    输入ADC采样完毕的数组组，模拟量
-    以及数组长度
-    type0：汉明窗
-    type1：汉宁窗
-    type2：布莱克曼窗
-    具体窗的旁瓣抑制效果以及主瓣宽度请到.C文件查看
+ * @brief 输入ADC采样完毕的数组组，模拟量以及数组长度
+ * type0：汉明窗
+ * type1：汉宁窗
+ * type2：布莱克曼窗
+ * 具体窗的旁瓣抑制效果以及主瓣宽度请到.C文件查看
  */
-
 void window_calculate(float32_t *input,uint32_t fft_length,int type)
 {
     float32_t *window = (float32_t*)malloc(fft_length * sizeof(float32_t));

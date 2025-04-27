@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj.d"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj"
   "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Src/dma.c.obj"

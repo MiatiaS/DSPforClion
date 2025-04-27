@@ -37,6 +37,7 @@
   #include "fft_phase.h"
   #include "fft_window.h"
   #include "fft_disp.h"
+  #include "myfir.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -177,6 +178,8 @@ int main(void)
           FFT_Handle->adc_val[i] = (float)FFT_Handle->adc_buf[i] /ADC_RANGE * 3.3;
           FFT_Handle2->adc_val[i] = (float)FFT_Handle2->adc_buf[i] /ADC_RANGE * 3.3;
         }
+        fir_calculate(FFT_Handle);
+
         //加窗运算
         window_calculate(FFT_Handle->adc_val,FFT_LENGTH,1);
         window_calculate(FFT_Handle2->adc_val,FFT_LENGTH,1);

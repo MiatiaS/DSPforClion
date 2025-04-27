@@ -4,5 +4,8 @@
 
 #ifndef MYFIR_H
 #define MYFIR_H
+#include "myfft.h"
+
+void fir_calculate(FFT_Handler* handler) ;
 
 #endif //MYFIR_H
