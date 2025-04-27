@@ -41,8 +41,7 @@ FFT_Handler_Free(fft);
          int FFT_LENGTH;         // FFT点数
 
          /* 输入数据指针 */
-         float* adc_val;         // 指向ADC采样数据数组
-         float* adc_val_doubled;   //后备隐藏数组 用于蝶形运算
+
          /* 输出结果 */
          float fft_fv;           // 基波频率(单位:Hz)
          float fft_vpp;          // 时域峰峰值
@@ -52,10 +51,13 @@ FFT_Handler_Free(fft);
          /* 内部缓冲区（由init函数分配）*/
          float* FFT_InputBuf;    // FFT输入缓冲区(实部+虚部)
          float* FFT_OutputBuf;   // FFT幅度输出缓冲区
-                float* FFT_InputBuf_over2;//FFT蝶形运算翻倍(实部+虚部)
-         float* FFT_OutputBuf_over2;//FFT蝶形运算翻倍
 
          struct compx* buffer ;
+
+         uint16_t* adc_buf;
+         float*    adc_val;         // 指向ADC采样数据数组
+
+         //模拟量
          /* FFT实例 */
          arm_cfft_radix4_instance_f32 scfft;  // CMSIS-DSP FFT实例
      } FFT_Handler;
@@ -67,7 +69,7 @@ FFT_Handler_Free(fft);
        * @param  fft_length FFT点数（建议使用2的幂）
        * @retval 成功返回处理器指针，失败返回NULL
        */
-     FFT_Handler* FFT_Handler_Init(int fft_length);
+     FFT_Handler* FFT_Handler_Init(uint32_t fft_length);
 
      /**
        * @brief  释放FFT处理器资源
@@ -90,6 +92,7 @@ FFT_Handler_Free(fft);
      void fft_calculate_rms(FFT_Handler* handler);
      void fft_calculate_vpp(FFT_Handler* handler);
      static void fft_myfly(FFT_Handler* handler);
+     void ultrafft(FFT_Handler* handler);
 
 
      void fft_calculate_over2(FFT_Handler* handler);

@@ -99,4 +99,6 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_phase.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_disp.h
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_window.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_disp.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfir.h

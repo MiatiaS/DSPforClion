@@ -8,5 +8,5 @@
 
 #include "myfft.h"
 
-void fft_freq_disp(FFT_Handler* FFT_Handle,int coefficient);
+void fft_freq_disp(FFT_Handler* FFT_Handle,float coefficient);
 #endif //FFT_DISP_H

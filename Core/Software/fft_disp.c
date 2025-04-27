@@ -7,26 +7,29 @@
 #include "lcd_init.h"
 #include "myfft.h"
 //DEFINE后不要加分号
-#define Screen_Width 300
+#define Screen_Width 260
 
 //设定横向显示 占用小部分屏幕
 /*
 	函数说明：显示FFT过后的频谱
-	输入：coefficient是幅度缩放比例 xaxis是位数 如4096是12
+	输入：coefficient是幅度缩放比例
 	修改横轴宽度请到.c操作
 */
-void fft_freq_disp(FFT_Handler* FFT_Handle,int coefficient)
+void fft_freq_disp(FFT_Handler* FFT_Handle,float coefficient)
 {
- 	int idx_width = FFT_Handle->FFT_LENGTH / Screen_Width; //规定每一个像素点间的FFT点数间隔
+ 	int idx_width = FFT_Handle->FFT_LENGTH / Screen_Width / 2; //规定每一个像素点间的FFT点数间隔,
     int i;
-    for(i = 0; i < Screen_Width; i++)
+    for(i = 0; i < Screen_Width; i = i + 1)
         {
-    	  int spot1 = 155 - ((int)FFT_Handle->FFT_OutputBuf[i] / coefficient);
-    	  int spot1_idx = (int)(i /(FFT_Handle->FFT_LENGTH / 128)  );
+    	  int spot1 = 220 - ((int)FFT_Handle->FFT_OutputBuf[i * idx_width] / coefficient);
+    	  int spot1_idx = 30 + i;
     	  LCD_DrawPoint(spot1_idx,spot1,YELLOW);
-    	  int spot2 = 155 - ((int)FFT_Handle->FFT_OutputBuf[i+1] / coefficient);
-    	  int spot2_idx = (int)(i+1 /(FFT_Handle->FFT_LENGTH / 128)  );
+
+    	  int spot2 = 220 - ((int)FFT_Handle->FFT_OutputBuf[(i+1) * idx_width] / coefficient);
+    	  int spot2_idx = 30 + i + 1;
     	  LCD_DrawPoint(spot2_idx,spot2,YELLOW);
-    	  LCD_DrawLine(spot1_idx,spot1,spot2_idx,spot2,YELLOW);
+
+    	  LCD_DrawLine(spot1_idx,spot1,spot2_idx,spot2,BLUE);
+    	  //LCD_DrawLine(spot1_idx,spot1,spot2_idx,spot2,YELLOW);
     	};
 }

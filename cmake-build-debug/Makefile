@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-de
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -247,6 +247,30 @@ Core/Software/myfft.s: Core/Software/myfft.c.s
 Core/Software/myfft.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.s
 .PHONY : Core/Software/myfft.c.s
+
+Core/Software/myfir.obj: Core/Software/myfir.c.obj
+.PHONY : Core/Software/myfir.obj
+
+# target to build an object file
+Core/Software/myfir.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj
+.PHONY : Core/Software/myfir.c.obj
+
+Core/Software/myfir.i: Core/Software/myfir.c.i
+.PHONY : Core/Software/myfir.i
+
+# target to preprocess a source file
+Core/Software/myfir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.i
+.PHONY : Core/Software/myfir.c.i
+
+Core/Software/myfir.s: Core/Software/myfir.c.s
+.PHONY : Core/Software/myfir.s
+
+# target to generate assembly for a file
+Core/Software/myfir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.s
+.PHONY : Core/Software/myfir.c.s
 
 Core/Src/adc.obj: Core/Src/adc.c.obj
 .PHONY : Core/Src/adc.obj
@@ -1216,6 +1240,9 @@ help:
 	@echo ... Core/Software/myfft.obj
 	@echo ... Core/Software/myfft.i
 	@echo ... Core/Software/myfft.s
+	@echo ... Core/Software/myfir.obj
+	@echo ... Core/Software/myfir.i
+	@echo ... Core/Software/myfir.s
 	@echo ... Core/Src/adc.obj
 	@echo ... Core/Src/adc.i
 	@echo ... Core/Src/adc.s
