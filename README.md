@@ -2,9 +2,9 @@
 
 
 
-# 项目标题
+#✨本项目为2025年电赛测量方向所写的代码 
 
-<span style="color: #2ecc71; font-size: 1.2em">✨本项目为2025年电赛测量方向所写的代码 </span>
+<span style="color: #2ecc71; font-size: 1.2em"></span>
 
 <span style="background: #f1c40f; padding: 5px">!开发环境为CubeMX + CLion 主控为STM32H743</span>
 
