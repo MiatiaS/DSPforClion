@@ -56,7 +56,7 @@ FFT_Handler_Free(fft);
 
          uint16_t* adc_buf;
          float*    adc_val;         // 指向ADC采样数据数组
-
+         int wave ;
          //模拟量
          /* FFT实例 */
          arm_cfft_radix4_instance_f32 scfft;  // CMSIS-DSP FFT实例
@@ -92,9 +92,10 @@ FFT_Handler_Free(fft);
      void fft_calculate_rms(FFT_Handler* handler);
      void fft_calculate_vpp(FFT_Handler* handler);
      static void fft_myfly(FFT_Handler* handler);
+     void fft_wave_detect(FFT_Handler* handler);
      void ultrafft(FFT_Handler* handler);
 
-
+     static float floatfindmax(float* array, int length, int number);
      void fft_calculate_over2(FFT_Handler* handler);
 
 

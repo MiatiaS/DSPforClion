@@ -71,7 +71,7 @@
   char str6[50];
   char str7[50];
   char str8[50];
-
+  char str9[50];
   int flag_adcdone;
 
   uint32_t time_idx;
@@ -181,6 +181,7 @@ int main(void)
         fir_calculate(FFT_Handle);
 
         //加窗运算
+
         window_calculate(FFT_Handle->adc_val,FFT_LENGTH,1);
         window_calculate(FFT_Handle2->adc_val,FFT_LENGTH,1);
         //不放中断，害怕中断更改val数据
@@ -221,6 +222,9 @@ int main(void)
 
         sprintf(str6, "Phase: %.5f deg",phase);
         LCD_ShowString(30, 110, str6, WHITE, BLACK, 16, 0);
+
+        sprintf(str7, "wave: %d   ",FFT_Handle->wave);
+        LCD_ShowString(30, 130, str7, WHITE, BLACK, 16, 0);
 
         fft_freq_disp(FFT_Handle,0.1);
 

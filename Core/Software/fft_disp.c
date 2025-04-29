@@ -20,12 +20,30 @@ void fft_freq_disp(FFT_Handler* FFT_Handle,float coefficient)
  	int idx_width = FFT_Handle->FFT_LENGTH / Screen_Width / 2; //规定每一个像素点间的FFT点数间隔,
     int i;
     for(i = 0; i < Screen_Width; i = i + 1)
-        {
-    	  int spot1 = 220 - ((int)FFT_Handle->FFT_OutputBuf[i * idx_width] / coefficient);
-    	  int spot1_idx = 30 + i;
-    	  LCD_DrawPoint(spot1_idx,spot1,YELLOW);
+    {
+	    int temp1 = 220 - ((int)FFT_Handle->FFT_OutputBuf[i * idx_width] / coefficient);
+    	int spot1;
+    	if (temp1 > 0)//防溢出检查
+    	{
+    		spot1 = temp1;
+    	}
+    	else
+    	{
+    		spot1 = 0;
+    	}
+    	int spot1_idx = 30 + i;
+    	LCD_DrawPoint(spot1_idx,spot1,YELLOW);
 
-    	  int spot2 = 220 - ((int)FFT_Handle->FFT_OutputBuf[(i+1) * idx_width] / coefficient);
+    	int temp2 = 220 - ((int)FFT_Handle->FFT_OutputBuf[(i+1) * idx_width] / coefficient);
+    	int spot2;
+    	if (temp2 > 0)
+    	{
+    		spot2 = temp2;
+    	}
+    	else
+    	{
+    		spot2 = 0;
+    	}
     	  int spot2_idx = 30 + i + 1;
     	  LCD_DrawPoint(spot2_idx,spot2,YELLOW);
 

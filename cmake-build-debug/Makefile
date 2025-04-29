@@ -224,6 +224,30 @@ Core/Software/fft_window.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.s
 .PHONY : Core/Software/fft_window.c.s
 
+Core/Software/my_coherrent.obj: Core/Software/my_coherrent.c.obj
+.PHONY : Core/Software/my_coherrent.obj
+
+# target to build an object file
+Core/Software/my_coherrent.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.obj
+.PHONY : Core/Software/my_coherrent.c.obj
+
+Core/Software/my_coherrent.i: Core/Software/my_coherrent.c.i
+.PHONY : Core/Software/my_coherrent.i
+
+# target to preprocess a source file
+Core/Software/my_coherrent.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.i
+.PHONY : Core/Software/my_coherrent.c.i
+
+Core/Software/my_coherrent.s: Core/Software/my_coherrent.c.s
+.PHONY : Core/Software/my_coherrent.s
+
+# target to generate assembly for a file
+Core/Software/my_coherrent.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.s
+.PHONY : Core/Software/my_coherrent.c.s
+
 Core/Software/myfft.obj: Core/Software/myfft.c.obj
 .PHONY : Core/Software/myfft.obj
 
@@ -1237,6 +1261,9 @@ help:
 	@echo ... Core/Software/fft_window.obj
 	@echo ... Core/Software/fft_window.i
 	@echo ... Core/Software/fft_window.s
+	@echo ... Core/Software/my_coherrent.obj
+	@echo ... Core/Software/my_coherrent.i
+	@echo ... Core/Software/my_coherrent.s
 	@echo ... Core/Software/myfft.obj
 	@echo ... Core/Software/myfft.i
 	@echo ... Core/Software/myfft.s

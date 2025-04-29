@@ -39,14 +39,16 @@
             if (handler->buffer == NULL)
                 return;
             // 初始化FFT实例
-            /*
-            if (arm_cfft_radix4_init_f32(&handler->scfft, fft_length, 0, 1) != ARM_MATH_SUCCESS) {
-                free(handler->FFT_InputBuf);
-                free(handler->FFT_OutputBuf);
-                free(handler);
-                return NULL;
+            if (fft_length == 4096)
+            {
+                if (arm_cfft_radix4_init_f32(&handler->scfft, fft_length, 0, 1) != ARM_MATH_SUCCESS) {
+                    free(handler->FFT_InputBuf);
+                    free(handler->FFT_OutputBuf);
+                    free(handler);
+                    return NULL;
+                }
             }
-            */
+
             return handler;
         }
 
@@ -69,17 +71,16 @@
             }
 
             // 执行FFT计算
-          // arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
-          // arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
-
+          //arm_cfft_radix4_f32(&handler->scfft, handler->FFT_InputBuf);
+          //arm_cmplx_mag_f32(handler->FFT_InputBuf, handler->FFT_OutputBuf, handler->FFT_LENGTH);
 
             ultrafft(handler);
 
             fft_calculate_mainfreq(handler);
-            fft_calculate_harmonic(handler);
+            //fft_calculate_harmonic(handler);
             fft_calculate_rms(handler);
             fft_calculate_vpp(handler);
-
+           // fft_wave_detect(handler);
         }
 
 
@@ -144,6 +145,8 @@
             }
 
         }
+
+
         void fft_calculate_rms(FFT_Handler* handler)
         {
             //对时域进行计算
@@ -157,7 +160,22 @@
             int idx_max,idx_min;
             arm_max_f32(handler->adc_val,handler->FFT_LENGTH,&max,&idx_max);
             arm_min_f32(handler->adc_val,handler->FFT_LENGTH,&min,&idx_min);
-            handler->fft_vpp = (max - min) ;  //经验值滤波 抖动在5mv左右，如果再通过均值滤波就好了
+            //handler->fft_vpp = (max - min) ;  //经验值滤波 抖动在5mv左右，如果再通过均值滤波就好了
+
+            /***********基于频域返回的计算***********/
+            float fft_max ;
+            int fft_idx_max;
+            arm_max_f32(handler->FFT_OutputBuf,handler->FFT_LENGTH,&fft_max,&fft_idx_max);
+            int ctr_cnt = 2; //选择主峰旁边的点数，加的越多理论抑制越好
+            float num_total = 0;
+            float num_sqrt = 0 ;
+            for (int i = -ctr_cnt; i < ctr_cnt + 1; i++)
+            {
+                num_total += handler->FFT_OutputBuf[fft_idx_max+i] * handler->FFT_OutputBuf[fft_idx_max+i];
+            }
+            //先求平方和，再开根号
+            arm_sqrt_f32(num_total,&num_sqrt);
+            handler->fft_vpp = num_sqrt /handler->FFT_LENGTH * 2 * 2 * 2;//原公式自带2倍，窗衰减到2倍，幅度转VPP*2
         }
 
         void fft_cauculate_vppf(FFT_Handler* handler)
@@ -167,13 +185,39 @@
             arm_max_f32(handler->FFT_OutputBuf,handler->FFT_LENGTH,&max,&idx_max);
 
         }
+/**************************波形检测**********************************/
+/*
+ *正弦波：三次谐波幅度为0，能量比无穷大。      定义为0
+ *方波：基波与三次谐波幅度比为3:1，能量比9:1。 定义为1
+ *三角波：基波与三次谐波幅度比为9:1，能量比81:1 定义为2
+*/
+        float fft_Val1,fft_Val2;
+        void fft_wave_detect(FFT_Handler* handler)
+        {
+            fft_Val1 = floatfindmax(handler->FFT_OutputBuf,handler->FFT_LENGTH/2,1);
+            fft_Val2 = floatfindmax(handler->FFT_OutputBuf,handler->FFT_LENGTH/2,2);
+            float type_k = fft_Val1 / fft_Val2;
+            if (type_k < 5)
+            {
+                handler->wave = 1;  //幅度比在3：1左右 方波 定义为1
+            }
+            else if (type_k > 5 && type_k < 13)
+            {
+                handler->wave = 2; //幅度在9：1左右 三角波 定义为2
+            }
+            else if (type_k > 13)
+            {
+                handler->wave = 0; //接近无穷，定义为正弦波
+            }
+        }
 
-
-
+/***************************谐波分析********************************/
         // 辅助函数：查找第n个最大值（带间隔保护） 返回下标
         //此处检查到最大值后，会把左右各10个点过滤掉，不再计算，减少频谱泄露带来的影响
+        //number为要查找的第几个最大值的个数
         static float floatfindmax(float* array, int length, int number) {
-            int* flag = (int*)calloc(length, sizeof(int));
+            int* flag = (int*)malloc(length * sizeof(int));
+            memset(flag, 0, length * sizeof(int));
             float max_value = 0;
 
             for (int n = 0; n < number; n++) {
@@ -181,7 +225,7 @@
                 int current_index = -1;
 
                 for (int i = 0; i < length; i++) {
-                    if (!flag[i] && array[i] > current_max) {
+                    if (flag[i] == 0 && array[i] > current_max) {
                         current_max = array[i];
                         current_index = i;
                     }
@@ -209,14 +253,21 @@
 
 
 
+
+
+
+
+
+
+        /*
         /*****实验性代码，蝶形运算
          *此部分代码不依赖fft_calculate函数运行
-         *******/
+         ******#1#
         void fft_calculate_over2(FFT_Handler* handler)
         {
             fft_myfly(handler);
         }
-        /************生成旋转因子***************/
+        /************生成旋转因子**************#1#
         static void precomute_twiddle_factors(float32_t *twiddle,uint32_t fft_length)
         {
             for (int i = 0;i <fft_length/2;i++)
@@ -281,4 +332,5 @@
             free(Inputbuf_even);
             free(Inputbuf_odd);
         }
+#1#
 */

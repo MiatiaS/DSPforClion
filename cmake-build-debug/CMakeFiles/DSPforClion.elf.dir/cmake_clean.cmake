@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj.d"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.obj"
+  "CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj.d"
   "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj"

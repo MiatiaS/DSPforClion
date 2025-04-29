@@ -39,6 +39,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/fft_disp.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj.d"
   "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/fft_phase.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj.d"
   "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/fft_window.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj.d"
+  "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/my_coherrent.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.obj.d"
   "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/myfft.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj.d"
   "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/myfir.c" "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj.d"
   "C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/adc.c" "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj" "gcc" "CMakeFiles/DSPforClion.elf.dir/Core/Src/adc.c.obj.d"
