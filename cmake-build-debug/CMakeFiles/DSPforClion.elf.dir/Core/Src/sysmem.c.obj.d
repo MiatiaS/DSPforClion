@@ -1,5 +1,5 @@
 CMakeFiles/DSPforClion.elf.dir/Core/Src/sysmem.c.obj: \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Src\sysmem.c \
+ C:\Users\20614\Desktop\DSPforClion\Core\Src\sysmem.c \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\errno.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\errno.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\reent.h \

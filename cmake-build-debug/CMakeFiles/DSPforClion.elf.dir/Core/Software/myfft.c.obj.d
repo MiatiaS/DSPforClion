@@ -1,5 +1,5 @@
 CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Software\myfft.c \
+ C:\Users\20614\Desktop\DSPforClion\Core\Software\myfft.c \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\math.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\reent.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
@@ -15,13 +15,13 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\lock.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\cdefs.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
+ C:\Users\20614\Desktop\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
+ C:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdint.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_intsup.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_stdint.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_gcc.h \
+ C:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include/cmsis_gcc.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
@@ -34,6 +34,6 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/myfft.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/fft.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/fft.h

@@ -1,8 +1,8 @@
 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj: \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Software\fft_phase.c \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Software\fft_phase.c \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/myfft.h \
+ C:\Users\20614\Desktop\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
+ C:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdint.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_default_types.h \
@@ -10,7 +10,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_newlib_version.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_intsup.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_stdint.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_gcc.h \
+ C:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include/cmsis_gcc.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \
@@ -32,9 +32,9 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_phase.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include-fixed\syslimits.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\limits.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\syslimits.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_phase.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/fft.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/fft_phase.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/myfft.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\types.h \

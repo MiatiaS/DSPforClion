@@ -1,6 +1,6 @@
 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj: \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Software\fft_window.c \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_window.h \
+ C:\Users\20614\Desktop\DSPforClion\Core\Software\fft_window.c \
+ C:\Users\20614\Desktop\DSPforClion\Core\Inc/fft_window.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \
@@ -30,12 +30,12 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
+ C:\Users\20614\Desktop\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
+ C:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdint.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_intsup.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_gcc.h \
+ C:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include/cmsis_gcc.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \

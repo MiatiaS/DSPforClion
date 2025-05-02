@@ -5,13 +5,13 @@
 # compile C with C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
 ASM_DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
 
-ASM_INCLUDES = -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Device\ST\STM32H7xx\Include -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Middlewares\ST\ARM\DSP\Inc
+ASM_INCLUDES = -IC:\Users\20614\Desktop\DSPforClion\Core\Inc -IC:\Users\20614\Desktop\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc -IC:\Users\20614\Desktop\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy -IC:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Device\ST\STM32H7xx\Include -IC:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include -IC:\Users\20614\Desktop\DSPforClion\Middlewares\ST\ARM\DSP\Inc
 
 ASM_FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m7 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
 
 C_DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER -DUSE_PWR_LDO_SUPPLY
 
-C_INCLUDES = -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Device\ST\STM32H7xx\Include -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include -IC:\Users\20614\Desktop\DSPforClion\DSPforClion\Middlewares\ST\ARM\DSP\Inc
+C_INCLUDES = -IC:\Users\20614\Desktop\DSPforClion\Core\Inc -IC:\Users\20614\Desktop\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc -IC:\Users\20614\Desktop\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy -IC:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Device\ST\STM32H7xx\Include -IC:\Users\20614\Desktop\DSPforClion\Drivers\CMSIS\Include -IC:\Users\20614\Desktop\DSPforClion\Middlewares\ST\ARM\DSP\Inc
 
 C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m7 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 

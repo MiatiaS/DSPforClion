@@ -1,3 +1,3 @@
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/cmake-build-debug/CMakeFiles/DSPforClion.elf.dir
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/20614/Desktop/DSPforClion/cmake-build-debug/CMakeFiles/DSPforClion.elf.dir
+C:/Users/20614/Desktop/DSPforClion/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/20614/Desktop/DSPforClion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

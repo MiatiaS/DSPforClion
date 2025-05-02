@@ -1,5 +1,5 @@
 CMakeFiles/DSPforClion.elf.dir/Core/Src/syscalls.c.obj: \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Src\syscalls.c \
+ C:\Users\20614\Desktop\DSPforClion\Core\Src\syscalls.c \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stat.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \

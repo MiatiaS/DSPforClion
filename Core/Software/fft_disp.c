@@ -4,7 +4,7 @@
 
 #include "fft_disp.h"
 #include "lcd.h"
-#include "lcd_init.h"
+#include "TFTh/TFT_CAD.h"
 #include "myfft.h"
 //DEFINE后不要加分号
 #define Screen_Width 260
@@ -15,21 +15,40 @@
 	输入：coefficient是幅度缩放比例
 	修改横轴宽度请到.c操作
 */
-void fft_freq_disp(FFT_Handler* FFT_Handle,float coefficient)
+void fft_freq_disp(TFT_HandleTypeDef htft,FFT_Handler* FFT_Handle,float coefficient)
 {
  	int idx_width = FFT_Handle->FFT_LENGTH / Screen_Width / 2; //规定每一个像素点间的FFT点数间隔,
     int i;
     for(i = 0; i < Screen_Width; i = i + 1)
-        {
-    	  int spot1 = 220 - ((int)FFT_Handle->FFT_OutputBuf[i * idx_width] / coefficient);
-    	  int spot1_idx = 30 + i;
-    	  LCD_DrawPoint(spot1_idx,spot1,YELLOW);
+    {
+	    int temp1 = 220 - ((int)FFT_Handle->FFT_OutputBuf[i * idx_width] / coefficient);
+    	int spot1;
+    	if (temp1 > 10)//防溢出检查
+    	{
+    		spot1 = temp1;
+    	}
+    	else
+    	{
+    		spot1 = 10;
+    	}
+    	int spot1_idx = 30 + i;
+    	//TFT_Draw_Point(&htft,spot1_idx,spot1,YELLOW);
 
-    	  int spot2 = 220 - ((int)FFT_Handle->FFT_OutputBuf[(i+1) * idx_width] / coefficient);
+    	int temp2 = 220 - ((int)FFT_Handle->FFT_OutputBuf[(i+1) * idx_width] / coefficient);
+    	int spot2;
+    	if (temp2 > 10)
+    	{
+    		spot2 = temp2;
+    	}
+    	else
+    	{
+    		spot2 = 10;
+    	}
     	  int spot2_idx = 30 + i + 1;
-    	  LCD_DrawPoint(spot2_idx,spot2,YELLOW);
+    	  //TFT_Draw_Point(&htft,spot2_idx,spot2,YELLOW);
 
-    	  LCD_DrawLine(spot1_idx,spot1,spot2_idx,spot2,BLUE);
-    	  //LCD_DrawLine(spot1_idx,spot1,spot2_idx,spot2,YELLOW);
+
+    	  //TFT_Draw_Line(&htft,spot1_idx,spot1,spot2_idx,spot2,BLUE);
+    	  LCD_DrawLine(spot1_idx,spot1,spot2_idx,spot2,YELLOW);
     	};
 }

@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\20614\Desktop\DSPforClion\DSPforClion
+CMAKE_SOURCE_DIR = C:\Users\20614\Desktop\DSPforClion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\20614\Desktop\DSPforClion\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-de
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\Clion\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2024.3.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug\CMakeFiles C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\DSPforClion\cmake-build-debug\CMakeFiles C:\Users\20614\Desktop\DSPforClion\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\DSPforClion\DSPforClion\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\20614\Desktop\DSPforClion\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,6 +224,30 @@ Core/Software/fft_window.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_window.c.s
 .PHONY : Core/Software/fft_window.c.s
 
+Core/Software/my_coherrent.obj: Core/Software/my_coherrent.c.obj
+.PHONY : Core/Software/my_coherrent.obj
+
+# target to build an object file
+Core/Software/my_coherrent.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.obj
+.PHONY : Core/Software/my_coherrent.c.obj
+
+Core/Software/my_coherrent.i: Core/Software/my_coherrent.c.i
+.PHONY : Core/Software/my_coherrent.i
+
+# target to preprocess a source file
+Core/Software/my_coherrent.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.i
+.PHONY : Core/Software/my_coherrent.c.i
+
+Core/Software/my_coherrent.s: Core/Software/my_coherrent.c.s
+.PHONY : Core/Software/my_coherrent.s
+
+# target to generate assembly for a file
+Core/Software/my_coherrent.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/my_coherrent.c.s
+.PHONY : Core/Software/my_coherrent.c.s
+
 Core/Software/myfft.obj: Core/Software/myfft.c.obj
 .PHONY : Core/Software/myfft.obj
 
@@ -247,6 +271,150 @@ Core/Software/myfft.s: Core/Software/myfft.c.s
 Core/Software/myfft.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfft.c.s
 .PHONY : Core/Software/myfft.c.s
+
+Core/Software/myfir.obj: Core/Software/myfir.c.obj
+.PHONY : Core/Software/myfir.obj
+
+# target to build an object file
+Core/Software/myfir.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj
+.PHONY : Core/Software/myfir.c.obj
+
+Core/Software/myfir.i: Core/Software/myfir.c.i
+.PHONY : Core/Software/myfir.i
+
+# target to preprocess a source file
+Core/Software/myfir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.i
+.PHONY : Core/Software/myfir.c.i
+
+Core/Software/myfir.s: Core/Software/myfir.c.s
+.PHONY : Core/Software/myfir.s
+
+# target to generate assembly for a file
+Core/Software/myfir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.s
+.PHONY : Core/Software/myfir.c.s
+
+Core/Src/TFTc/TFT_CAD.obj: Core/Src/TFTc/TFT_CAD.c.obj
+.PHONY : Core/Src/TFTc/TFT_CAD.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_CAD.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.obj
+.PHONY : Core/Src/TFTc/TFT_CAD.c.obj
+
+Core/Src/TFTc/TFT_CAD.i: Core/Src/TFTc/TFT_CAD.c.i
+.PHONY : Core/Src/TFTc/TFT_CAD.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_CAD.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.i
+.PHONY : Core/Src/TFTc/TFT_CAD.c.i
+
+Core/Src/TFTc/TFT_CAD.s: Core/Src/TFTc/TFT_CAD.c.s
+.PHONY : Core/Src/TFTc/TFT_CAD.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_CAD.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.s
+.PHONY : Core/Src/TFTc/TFT_CAD.c.s
+
+Core/Src/TFTc/TFT_init.obj: Core/Src/TFTc/TFT_init.c.obj
+.PHONY : Core/Src/TFTc/TFT_init.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_init.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.obj
+.PHONY : Core/Src/TFTc/TFT_init.c.obj
+
+Core/Src/TFTc/TFT_init.i: Core/Src/TFTc/TFT_init.c.i
+.PHONY : Core/Src/TFTc/TFT_init.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.i
+.PHONY : Core/Src/TFTc/TFT_init.c.i
+
+Core/Src/TFTc/TFT_init.s: Core/Src/TFTc/TFT_init.c.s
+.PHONY : Core/Src/TFTc/TFT_init.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.s
+.PHONY : Core/Src/TFTc/TFT_init.c.s
+
+Core/Src/TFTc/TFT_io.obj: Core/Src/TFTc/TFT_io.c.obj
+.PHONY : Core/Src/TFTc/TFT_io.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_io.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.obj
+.PHONY : Core/Src/TFTc/TFT_io.c.obj
+
+Core/Src/TFTc/TFT_io.i: Core/Src/TFTc/TFT_io.c.i
+.PHONY : Core/Src/TFTc/TFT_io.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_io.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.i
+.PHONY : Core/Src/TFTc/TFT_io.c.i
+
+Core/Src/TFTc/TFT_io.s: Core/Src/TFTc/TFT_io.c.s
+.PHONY : Core/Src/TFTc/TFT_io.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_io.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.s
+.PHONY : Core/Src/TFTc/TFT_io.c.s
+
+Core/Src/TFTc/TFT_text.obj: Core/Src/TFTc/TFT_text.c.obj
+.PHONY : Core/Src/TFTc/TFT_text.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_text.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.obj
+.PHONY : Core/Src/TFTc/TFT_text.c.obj
+
+Core/Src/TFTc/TFT_text.i: Core/Src/TFTc/TFT_text.c.i
+.PHONY : Core/Src/TFTc/TFT_text.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_text.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.i
+.PHONY : Core/Src/TFTc/TFT_text.c.i
+
+Core/Src/TFTc/TFT_text.s: Core/Src/TFTc/TFT_text.c.s
+.PHONY : Core/Src/TFTc/TFT_text.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_text.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.s
+.PHONY : Core/Src/TFTc/TFT_text.c.s
+
+Core/Src/TFTc/font.obj: Core/Src/TFTc/font.c.obj
+.PHONY : Core/Src/TFTc/font.obj
+
+# target to build an object file
+Core/Src/TFTc/font.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.obj
+.PHONY : Core/Src/TFTc/font.c.obj
+
+Core/Src/TFTc/font.i: Core/Src/TFTc/font.c.i
+.PHONY : Core/Src/TFTc/font.i
+
+# target to preprocess a source file
+Core/Src/TFTc/font.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.i
+.PHONY : Core/Src/TFTc/font.c.i
+
+Core/Src/TFTc/font.s: Core/Src/TFTc/font.c.s
+.PHONY : Core/Src/TFTc/font.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/font.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.s
+.PHONY : Core/Src/TFTc/font.c.s
 
 Core/Src/adc.obj: Core/Src/adc.c.obj
 .PHONY : Core/Src/adc.obj
@@ -1213,9 +1381,30 @@ help:
 	@echo ... Core/Software/fft_window.obj
 	@echo ... Core/Software/fft_window.i
 	@echo ... Core/Software/fft_window.s
+	@echo ... Core/Software/my_coherrent.obj
+	@echo ... Core/Software/my_coherrent.i
+	@echo ... Core/Software/my_coherrent.s
 	@echo ... Core/Software/myfft.obj
 	@echo ... Core/Software/myfft.i
 	@echo ... Core/Software/myfft.s
+	@echo ... Core/Software/myfir.obj
+	@echo ... Core/Software/myfir.i
+	@echo ... Core/Software/myfir.s
+	@echo ... Core/Src/TFTc/TFT_CAD.obj
+	@echo ... Core/Src/TFTc/TFT_CAD.i
+	@echo ... Core/Src/TFTc/TFT_CAD.s
+	@echo ... Core/Src/TFTc/TFT_init.obj
+	@echo ... Core/Src/TFTc/TFT_init.i
+	@echo ... Core/Src/TFTc/TFT_init.s
+	@echo ... Core/Src/TFTc/TFT_io.obj
+	@echo ... Core/Src/TFTc/TFT_io.i
+	@echo ... Core/Src/TFTc/TFT_io.s
+	@echo ... Core/Src/TFTc/TFT_text.obj
+	@echo ... Core/Src/TFTc/TFT_text.i
+	@echo ... Core/Src/TFTc/TFT_text.s
+	@echo ... Core/Src/TFTc/font.obj
+	@echo ... Core/Src/TFTc/font.i
+	@echo ... Core/Src/TFTc/font.s
 	@echo ... Core/Src/adc.obj
 	@echo ... Core/Src/adc.i
 	@echo ... Core/Src/adc.s
