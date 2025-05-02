@@ -7,6 +7,6 @@
 
 
 #include "myfft.h"
-
-void fft_freq_disp(FFT_Handler* FFT_Handle,float coefficient);
+#include "TFTh/TFT_io.h"
+void fft_freq_disp(TFT_HandleTypeDef htft,FFT_Handler* FFT_Handle,float coefficient) ;
 #endif //FFT_DISP_H

@@ -296,6 +296,126 @@ Core/Software/myfir.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.s
 .PHONY : Core/Software/myfir.c.s
 
+Core/Src/TFTc/TFT_CAD.obj: Core/Src/TFTc/TFT_CAD.c.obj
+.PHONY : Core/Src/TFTc/TFT_CAD.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_CAD.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.obj
+.PHONY : Core/Src/TFTc/TFT_CAD.c.obj
+
+Core/Src/TFTc/TFT_CAD.i: Core/Src/TFTc/TFT_CAD.c.i
+.PHONY : Core/Src/TFTc/TFT_CAD.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_CAD.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.i
+.PHONY : Core/Src/TFTc/TFT_CAD.c.i
+
+Core/Src/TFTc/TFT_CAD.s: Core/Src/TFTc/TFT_CAD.c.s
+.PHONY : Core/Src/TFTc/TFT_CAD.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_CAD.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.s
+.PHONY : Core/Src/TFTc/TFT_CAD.c.s
+
+Core/Src/TFTc/TFT_init.obj: Core/Src/TFTc/TFT_init.c.obj
+.PHONY : Core/Src/TFTc/TFT_init.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_init.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.obj
+.PHONY : Core/Src/TFTc/TFT_init.c.obj
+
+Core/Src/TFTc/TFT_init.i: Core/Src/TFTc/TFT_init.c.i
+.PHONY : Core/Src/TFTc/TFT_init.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.i
+.PHONY : Core/Src/TFTc/TFT_init.c.i
+
+Core/Src/TFTc/TFT_init.s: Core/Src/TFTc/TFT_init.c.s
+.PHONY : Core/Src/TFTc/TFT_init.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.s
+.PHONY : Core/Src/TFTc/TFT_init.c.s
+
+Core/Src/TFTc/TFT_io.obj: Core/Src/TFTc/TFT_io.c.obj
+.PHONY : Core/Src/TFTc/TFT_io.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_io.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.obj
+.PHONY : Core/Src/TFTc/TFT_io.c.obj
+
+Core/Src/TFTc/TFT_io.i: Core/Src/TFTc/TFT_io.c.i
+.PHONY : Core/Src/TFTc/TFT_io.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_io.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.i
+.PHONY : Core/Src/TFTc/TFT_io.c.i
+
+Core/Src/TFTc/TFT_io.s: Core/Src/TFTc/TFT_io.c.s
+.PHONY : Core/Src/TFTc/TFT_io.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_io.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.s
+.PHONY : Core/Src/TFTc/TFT_io.c.s
+
+Core/Src/TFTc/TFT_text.obj: Core/Src/TFTc/TFT_text.c.obj
+.PHONY : Core/Src/TFTc/TFT_text.obj
+
+# target to build an object file
+Core/Src/TFTc/TFT_text.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.obj
+.PHONY : Core/Src/TFTc/TFT_text.c.obj
+
+Core/Src/TFTc/TFT_text.i: Core/Src/TFTc/TFT_text.c.i
+.PHONY : Core/Src/TFTc/TFT_text.i
+
+# target to preprocess a source file
+Core/Src/TFTc/TFT_text.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.i
+.PHONY : Core/Src/TFTc/TFT_text.c.i
+
+Core/Src/TFTc/TFT_text.s: Core/Src/TFTc/TFT_text.c.s
+.PHONY : Core/Src/TFTc/TFT_text.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/TFT_text.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.s
+.PHONY : Core/Src/TFTc/TFT_text.c.s
+
+Core/Src/TFTc/font.obj: Core/Src/TFTc/font.c.obj
+.PHONY : Core/Src/TFTc/font.obj
+
+# target to build an object file
+Core/Src/TFTc/font.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.obj
+.PHONY : Core/Src/TFTc/font.c.obj
+
+Core/Src/TFTc/font.i: Core/Src/TFTc/font.c.i
+.PHONY : Core/Src/TFTc/font.i
+
+# target to preprocess a source file
+Core/Src/TFTc/font.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.i
+.PHONY : Core/Src/TFTc/font.c.i
+
+Core/Src/TFTc/font.s: Core/Src/TFTc/font.c.s
+.PHONY : Core/Src/TFTc/font.s
+
+# target to generate assembly for a file
+Core/Src/TFTc/font.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSPforClion.elf.dir\build.make CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.s
+.PHONY : Core/Src/TFTc/font.c.s
+
 Core/Src/adc.obj: Core/Src/adc.c.obj
 .PHONY : Core/Src/adc.obj
 
@@ -1270,6 +1390,21 @@ help:
 	@echo ... Core/Software/myfir.obj
 	@echo ... Core/Software/myfir.i
 	@echo ... Core/Software/myfir.s
+	@echo ... Core/Src/TFTc/TFT_CAD.obj
+	@echo ... Core/Src/TFTc/TFT_CAD.i
+	@echo ... Core/Src/TFTc/TFT_CAD.s
+	@echo ... Core/Src/TFTc/TFT_init.obj
+	@echo ... Core/Src/TFTc/TFT_init.i
+	@echo ... Core/Src/TFTc/TFT_init.s
+	@echo ... Core/Src/TFTc/TFT_io.obj
+	@echo ... Core/Src/TFTc/TFT_io.i
+	@echo ... Core/Src/TFTc/TFT_io.s
+	@echo ... Core/Src/TFTc/TFT_text.obj
+	@echo ... Core/Src/TFTc/TFT_text.i
+	@echo ... Core/Src/TFTc/TFT_text.s
+	@echo ... Core/Src/TFTc/font.obj
+	@echo ... Core/Src/TFTc/font.i
+	@echo ... Core/Src/TFTc/font.s
 	@echo ... Core/Src/adc.obj
 	@echo ... Core/Src/adc.i
 	@echo ... Core/Src/adc.s

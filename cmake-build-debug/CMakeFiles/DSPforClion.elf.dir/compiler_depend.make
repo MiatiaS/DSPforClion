@@ -35,12 +35,15 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft.c.obj: C:/Users/20614/Desktop/D
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/fft_disp.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_CAD.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_disp.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd.h \
-  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd_init.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/main.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/myfft.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/stm32h7xx_hal_conf.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
@@ -283,6 +286,288 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/myfir.c.obj: C:/Users/20614/Desktop
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/float.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_CAD.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_CAD.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_CAD.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/main.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/stm32h7xx_hal_conf.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_gcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_version.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/core_cm7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/mpu_armv7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_init.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_init.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_init.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/main.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/stm32h7xx_hal_conf.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_gcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_version.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/core_cm7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/mpu_armv7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_io.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_io.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/main.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/stm32h7xx_hal_conf.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_gcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_version.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/core_cm7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/mpu_armv7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/TFT_text.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_text.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_text.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/font.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/main.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/stm32h7xx_hal_conf.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_gcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/cmsis_version.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/core_cm7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Include/mpu_armv7.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+CMakeFiles/DSPforClion.elf.dir/Core/Src/TFTc/font.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/font.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/font.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/strings.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
@@ -585,6 +870,11 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/lcd_init.c.obj: C:/Users/20614/Desktop/D
   C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/main.c \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_CAD.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_init.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h \
+  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_text.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/adc.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/dma.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft.h \
@@ -592,8 +882,6 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: C:/Users/20614/Desktop/DSPfo
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_phase.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/fft_window.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/gpio.h \
-  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd.h \
-  C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd_init.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/main.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/memorymap.h \
   C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/myfft.h \
@@ -2581,6 +2869,10 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/
 
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h:
 
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_config.h:
+
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/types.h:
 
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h:
@@ -2605,11 +2897,15 @@ C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/string.h
 
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_locale.h:
 
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_CAD.h:
+
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h:
 
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h:
 
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h:
 
@@ -2627,6 +2923,8 @@ C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/inclu
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/fft_disp.c:
 
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_io.h:
+
 C:/ProgramData/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h:
@@ -2636,8 +2934,6 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd.h:
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/myfft.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h:
-
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd_init.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h:
 
@@ -2675,9 +2971,11 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h:
 
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
-
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_init.c:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
 
@@ -2696,6 +2994,8 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_init.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h:
 
@@ -2745,6 +3045,20 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Software/myfir.c:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/myfir.h:
 
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_CAD.c:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_io.c:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/TFT_text.c:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/TFT_text.h:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/TFTh/font.h:
+
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/TFTc/font.c:
+
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/adc.c:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/adc.h:
@@ -2759,9 +3073,9 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/gpio.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Src/lcd.c:
 
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcdfont.h:
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcd_init.h:
 
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/spi.h:
+C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/lcdfont.h:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Core/Inc/memorymap.h:
 
@@ -2835,12 +3149,8 @@ C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c:
 
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c:
-
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c:
-
-C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c:
 
 C:/Users/20614/Desktop/DSPforClion/DSPforClion/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c:

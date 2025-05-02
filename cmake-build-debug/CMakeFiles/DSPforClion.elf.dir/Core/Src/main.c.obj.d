@@ -82,8 +82,6 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/lcd.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/lcd_init.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\CMSIS\Include/cmsis_compiler.h \
@@ -101,4 +99,10 @@ CMakeFiles/DSPforClion.elf.dir/Core/Src/main.c.obj: \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_window.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft_disp.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfir.h
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_io.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_config.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfir.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_init.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_io.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_CAD.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_text.h

@@ -31,18 +31,21 @@
   #include <stdio.h>
   #include <stdlib.h>
 
-  #include "lcd.h"
-  #include "lcd_init.h"
+
   #include "myfft.h"
   #include "fft_phase.h"
   #include "fft_window.h"
   #include "fft_disp.h"
   #include "myfir.h"
+  #include "TFTh/TFT_init.h"
+  #include "TFTh/TFT_CAD.h" // 包含绘图函数和 IO 函数
+  #include "TFTh/TFT_text.h"
+  #include "TFTh/TFT_io.h" // 包含RGB转换函数
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+TFT_HandleTypeDef htft1 ;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -85,6 +88,21 @@ void SystemClock_Config(void);
 void PeriphCommonClock_Config(void);
 static void MPU_Config(void);
 /* USER CODE BEGIN PFP */
+void TFT_Demo_Init(void)
+{
+  // 初始化第一个TFT屏幕
+  TFT_Init_Instance(&htft1, &hspi2, TFT_CS_GPIO_Port, TFT_CS_Pin);
+  TFT_Config_Pins(&htft1, TFT_DC_GPIO_Port, TFT_DC_Pin,
+                  TFT_RES_GPIO_Port, TFT_RES_Pin,
+                  TFT_BL_GPIO_Port, TFT_BL_Pin);
+  TFT_Config_Display(&htft1, 3, 0, 0); // 设置方向、X/Y偏移
+  TFT_IO_Init(&htft1); // 初始化IO层
+  TFT_Init_ST7789v3(&htft1); // ST7735S屏幕初始化
+  // 设置不同的缓冲区大小以测试内存管理
+  htft1.buffer_size = 2048; // 第一屏使用较大缓冲
+  // 初始化帧率计时
+  int lastTick = HAL_GetTick();
+}
 
 /* USER CODE END PFP */
 
@@ -142,7 +160,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
     HAL_Delay(200);
-    LCD_ST7789V3_Init();
+    //LCD_ST7789V3_Init();
+    TFT_Demo_Init();
     HAL_ADCEx_Calibration_Start(&hadc2,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_ADCEx_Calibration_Start(&hadc1,LL_ADC_CALIB_LINEARITY,ADC_SINGLE_ENDED);
     HAL_Delay(200);
@@ -153,11 +172,12 @@ int main(void)
     FFT_Handle2->adc_rate = 100000;
     HAL_TIM_Base_Start(&htim6); //TIM6同步触发两个ADC进行采样
     HAL_TIM_Base_Start_IT(&htim3); //TIM5 用于做时间定时
-
+    TFT_Fill_Area(&htft1,0,0,320,240,BLACK);
+    TFT_Show_String(&htft1,40,30,"hello wolrd",WHITE,BLACK,16,0);
 
     HAL_ADC_Start_DMA(&hadc2,FFT_Handle->adc_buf,FFT_LENGTH);
     HAL_ADC_Start_DMA(&hadc1,FFT_Handle2->adc_buf,FFT_LENGTH);
-    LCD_Fill(0,0,320,240,BLACK);
+    //LCD_Fill(0,0,320,240,BLACK);
     //FFT Init
 
   /* USER CODE END 2 */
@@ -178,7 +198,7 @@ int main(void)
           FFT_Handle->adc_val[i] = (float)FFT_Handle->adc_buf[i] /ADC_RANGE * 3.3;
           FFT_Handle2->adc_val[i] = (float)FFT_Handle2->adc_buf[i] /ADC_RANGE * 3.3;
         }
-        fir_calculate(FFT_Handle);
+       //fir_calculate(FFT_Handle);
 
         //加窗运算
 
@@ -186,7 +206,7 @@ int main(void)
         window_calculate(FFT_Handle2->adc_val,FFT_LENGTH,1);
         //不放中断，害怕中断更改val数据
 
-        LCD_ShowString(30,20,"hello world",WHITE,BLACK,32,0);
+       // LCD_ShowString(30,20,"hello world",WHITE,BLACK,32,0);
         fft_calculate(FFT_Handle);
         fft_calculate(FFT_Handle2);
         float phase = fft_calculate_phase(FFT_Handle,FFT_Handle2);
@@ -206,30 +226,32 @@ int main(void)
 
 
       /************************************显示&&串口发送*******************************************/
+
         for (int i =0; i < FFT_LENGTH; i++)
         {
           sprintf(str1,"val:%3f,%3f,%3f\r\n",FFT_Handle->adc_val[i],(float)i/1000,fft_output_temp[i]);
           HAL_UART_Transmit_DMA(&huart1,str1,sizeof(str1));
         }
         sprintf(str3, "Freq: %.1f Hz", FFT_Handle->fft_fv);
-        LCD_ShowString(30, 50, str3 ,WHITE, BLACK, 16, 0);
+        TFT_Show_String(&htft1,30, 50, str3 ,WHITE, BLACK, 16, 0);
         // 显示电压有效值
         sprintf(str4, "Vpp: %.5f V", FFT_Handle->fft_vpp);
-        LCD_ShowString(30, 70, str4, WHITE, BLACK, 16, 0);
+        TFT_Show_String(&htft1,30, 70, str4, WHITE, BLACK, 16, 0);
 
         sprintf(str5,"RMS: %.5f v",FFT_Handle->fft_rms);
-        LCD_ShowString(30, 90, str5, WHITE, BLACK, 16, 0);
+        TFT_Show_String(&htft1,30, 90, str5, WHITE, BLACK, 16, 0);
 
         sprintf(str6, "Phase: %.5f deg",phase);
-        LCD_ShowString(30, 110, str6, WHITE, BLACK, 16, 0);
+        TFT_Show_String(&htft1,30, 110, str6, WHITE, BLACK, 16, 0);
 
         sprintf(str7, "wave: %d   ",FFT_Handle->wave);
-        LCD_ShowString(30, 130, str7, WHITE, BLACK, 16, 0);
+        TFT_Show_String(&htft1,30, 130, str7, WHITE, BLACK, 16, 0);
 
-        fft_freq_disp(FFT_Handle,0.1);
+        fft_freq_disp(htft1,FFT_Handle,0.1);
+
 
         HAL_Delay(1000);
-        LCD_Fill(0,0,320,240,BLACK);
+        //LCD_Fill(0,0,320,240,BLACK);
         flag_adcdone = 0;
 
 

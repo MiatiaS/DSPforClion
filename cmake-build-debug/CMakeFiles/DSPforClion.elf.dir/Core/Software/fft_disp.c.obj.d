@@ -34,7 +34,7 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj: \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\limits.h \
  c:\programdata\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\syslimits.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/fft.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/lcd.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_io.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/main.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/stm32h7xx_hal_conf.h \
@@ -72,5 +72,10 @@ CMakeFiles/DSPforClion.elf.dir/Core/Software/fft_disp.c.obj: \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_tim_ex.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart_ex.h \
- C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/lcd_init.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/spi.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/main.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_config.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/lcd.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_CAD.h \
+ C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/TFTh/TFT_io.h \
  C:\Users\20614\Desktop\DSPforClion\DSPforClion\Core\Inc/myfft.h
